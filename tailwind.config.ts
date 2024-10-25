@@ -10,10 +10,18 @@ const config: Config = {
     extend: {
       colors: {
         background: "var(--background)",
+        backgroundTrans: "var(--backgroundTransparent)",
         foreground: "var(--foreground)",
+        primary: "var(--primary)",
+        secondary: "var(--secondary)",
       },
+      // fontFamily: {
+      //   Gmvf: ['GeistMonoVF', 'sans-serif'], 
+      //   Gvf: ['GeistVF', 'sans-serif'], 
+      // },
     },
   },
   plugins: [],
 };
 export default config;
+

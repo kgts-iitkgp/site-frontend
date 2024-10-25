@@ -2,27 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-
-/* @font-face {
-  font-family: 'GeistMonoVF';
-  src: url('/fonts/GeistMonoVF.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'GeistVF';
-  src: url('/fonts/GeistVF.woff') format('woff');
-  font-weight: bolder;
-  font-style: normal;
-} */
-
-/* Add any other global styles here */
-
-
 :root {
     --background: #343a40;
-    --backgroundTransparent: #343a4050;
     --foreground: #ffffff;
     --primary: #8c30e3;
     --secondary: #7564ef;

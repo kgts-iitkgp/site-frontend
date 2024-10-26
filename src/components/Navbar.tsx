@@ -1,10 +1,10 @@
 import Image from "next/image";
-import Logo from "../assets/KGTSlogo.png";
+import Logo from "../../public/assets/KGTSlogo.png";
 import Link from "next/link";
 
 function Navbar() {
   return (
-    <div className="px-10 py-2 border-b-[1px] border-slate-200 flex justify-between items-center bg-black/80 fixed z-100 top-0 w-full">
+    <div className="px-10 py-2 border-b-[1px] border-slate-200 flex justify-between items-center bg-black/80 fixed z-50 top-0 w-full">
       <div className="rounded-full border-2 border-white p-1">
         <Image src={Logo} height={35} alt="logo"></Image>
       </div>

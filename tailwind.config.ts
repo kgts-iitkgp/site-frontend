@@ -11,9 +11,35 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        primaryColor : "#8c30e3",
+        secondaryColor : '#7564ef',
+        backColor : '#343a40'
+      },
+      textShadow: {
+        glow: '0 0 5px #7564ef, 0 0 10px #7564ef, 0 0 15px #7564ef, 0 0 20px #7564ef',
+      },
+      keyframes: {
+        wiggle: {
+          '0%, 100%': { transform: 'translateX(0)' },
+          '50%': { transform: 'translateX(-5px)' },
+        },
+      },
+      animation: {
+        wiggle: 'wiggle 0.5s ease-in-out ',
       },
     },
+    fontFamily : {
+      com : ['var(--font-com)','Rubik Wet Paint'],
+    },
+    letterSpacing : {
+      space : '0.35em',
+    },
+    lineHeight : {
+      '2.9' : '2.9em',
+    },
   },
-  plugins: [],
+  plugins: [
+    require('tailwindcss-textshadow')
+  ],
 };
 export default config;

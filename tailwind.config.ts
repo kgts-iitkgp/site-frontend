@@ -9,11 +9,10 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        backgroundTrans: "var(--backgroundTransparent)",
-        foreground: "var(--foreground)",
-        primary: "var(--primary)",
-        secondary: "var(--secondary)",
+        primaryBg: "var(--primaryBg)",
+        accent1: "var(--accent1)",
+        accent2: "var(--accent2)",
+        transBack: "var(--transBack)",
       },
       // fontFamily: {
       //   Gmvf: ['GeistMonoVF', 'sans-serif'], 
@@ -24,4 +23,3 @@ const config: Config = {
   plugins: [],
 };
 export default config;
-

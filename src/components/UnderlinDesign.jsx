@@ -3,10 +3,10 @@ import React from "react";
 const UnderlinDesign = () => {
   return (
     <div className="flex justify-center items-center mb-10">
-      <div className="border-2 h-0 w-20 border-secondary"></div>
+      <div className="border-2 h-0 w-20 border-accent2"></div>
       <div className="">
         <svg
-          className="h-7 mx-3 text-secondary"
+          className="h-7 mx-3 text-yellow-200"
           aria-hidden="true"
           focusable="false"
           data-prefix="fas"
@@ -22,7 +22,7 @@ const UnderlinDesign = () => {
           ></path>
         </svg>
       </div>
-      <div className="border-2 h-0 w-20 border-secondary"></div>
+      <div className="border-2 h-0 w-20 border-accent2"></div>
     </div>
   );
 };

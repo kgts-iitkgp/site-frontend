@@ -1,9 +1,20 @@
 import React from 'react'
 
-const LinkCard = () => {
+
+type ModalCardLinks = {
+  link_card: {
+    link:string;
+    link_title:string;
+  };
+};
+const LinkCard:React.FC<ModalCardLinks>  = ({link_card}) => {
+  const openLink = (url:string) => {
+    window.open(url, '_blank');
+  };
+  
   return (
-    <div className='py-2 px-4 bg-yellow-300 text-primary font-semibold hover:shadow-2xl hover:-translate-y-1 transition'>
-      YouTube Playlist by Mr-x
+    <div onClick={()=>openLink(link_card.link)} className='py-2 px-4 bg-pink-300 font-semibold cursor-pointer hover:shadow-2xl hover:-translate-y-1 transition'>
+      {link_card.link_title}
     </div>
   )
 }

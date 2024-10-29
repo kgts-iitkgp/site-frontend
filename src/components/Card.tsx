@@ -1,4 +1,4 @@
-// src/components/Card.tsx
+
 import React from 'react';
 
 type CardProps = {
@@ -21,7 +21,7 @@ const Card: React.FC<CardProps> = ({ card, onClick }) => {
         alt={card.title}
         className=" h-40 w-60 object-fill rounded-lg mb-4 border-2"
       />
-      <h3 className="text-secondary text-3xl font-medium text-center">{card.title}</h3>
+      <h3 className="text-accent2 text-3xl font-medium text-center">{card.title}</h3>
     </div>
   );
 };

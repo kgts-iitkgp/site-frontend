@@ -21,12 +21,12 @@ function HomePage() {
       {/* Hero Section */}
       <div
         className="px-4 pt-28 sm:pt-40 pb-4 relative -z-10 w-full text-center bg-cover bg-center"
-        style={{ backgroundImage: `url(${HeroSectionImg.src})` }}
+        style={{ backgroundImage: `url(${HeroSectionImg.src})`}}
       >
         <p className="mt-20 md:mt-0 text-4xl md:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-secondary to-primary">
           Welcome To KGTS
         </p>
-        <p className="mt-4 font-normal text-base md:text-lg text-white max-w-lg mx-auto">
+        <p className="mt-4 font-semibold text-base md:text-lg text-white max-w-lg mx-auto">
           Where strategic thinking meets innovation! Join us in exploring the
           fascinating world of game theory, unraveling the complexities of
           decision-making, and enhancing our understanding of competitive and
@@ -86,7 +86,7 @@ function HomePage() {
         <div className="my-2 flex flex-col sm:flex-row sm:space-x-3 items-center">
           <p className="sm:mt-20 md:mt-0 text-3xl sm:text-2xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-secondary to-primary">
             <CountUp
-              end={70}
+              end={69}
               enableScrollSpy={true}
               useIndianSeparators={true}
             />

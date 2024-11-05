@@ -6,11 +6,13 @@ const config: Config = {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  theme: {
+   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        primaryBg: "#000000",
+        accent1: "#8c30e3",
+        accent2: "#7564ef",
+        cardbg: "#212121"
       },
     },
   },

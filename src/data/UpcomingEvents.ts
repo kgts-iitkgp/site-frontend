@@ -1,5 +1,5 @@
 import { Event } from "./types";
-import nashify from "/public/Nashify.jpg"
+
 import Tech from "/public/Tech_workshop.jpg"
 import Stratathon from '/public/Stratathon.jpg'
 import war from "/public/war_of_wits.jpg"
@@ -11,15 +11,8 @@ export const Upcoming : Event[] = [
         description : "It is an annual on-spot strategy based competition for students of IIT Kharagpur",
         startDate : "March",
         endDate : "March",
+        month : "March",
         image : war,
-    },
-    {
-        id : "2",
-        title : "Nashify",
-        description: "It is the first of its kind game theory based on-spot inter-college event designed and conducted by the The KGPian Game Theory Society in Kshitij",
-        startDate : "2024-11-03",
-        endDate : "2024-11-03",
-        image : nashify,
     },
     {
         id : "3",

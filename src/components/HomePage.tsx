@@ -2,7 +2,6 @@
 import React from "react";
 import { Button } from "./moving-border";
 import Image from "next/image";
-import HeroSectionImg from "../../public/images/HeroSection.png";
 import backgroundImg from "../../public/images/background.png";
 import diceImg from "../../public/images/dice.png"
 import Logo from "../../public/images/KGTSlogo.png";
@@ -21,7 +20,7 @@ function HomePage() {
     <div>
       <DotBackground />
       {/* Hero Section */}
-      <div className="relative w-full h-full px-4 pt-28 sm:pt-28 pb-4 bg-cover bg-center flex justify-between items-center">
+      <div className="relative w-full h-full px-4 sm:pt-28 pb-4 bg-cover bg-center flex justify-center items-center">
         {/* Background Image */}
         <img
           src={backgroundImg.src} // the background image without the dice
@@ -30,19 +29,19 @@ function HomePage() {
         />
         <div className="flex sm:flex-row items-center flex-col">
           {/* Dice Image */}
-          <div className="sm:w-1/2">
+          <div className="sm:w-1/2 ">
             <img
               src={diceImg.src}
               alt="Dice"
-              className="transform sm:scale-150 scale-125 sm:-translate-x-16 mx-auto md:mx-0 "
+              className="transform sm:scale-150 sm:-translate-x-16 mx-auto md:mx-0 translate-y-36 sm:-translate-y-0"
             />
           </div>
           {/* Text Content */}
-          <div className=" text-white sm:w-1/2 mr-5">
-            <p className="text-4xl md:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-secondary to-primary">
+          <div className=" text-white sm:w-1/2 sm:mr-5 relative sm:translate-y-10 -top-20 sm:ml-0 mx-12 items-center translate-x-5 text-center sm:text-left">
+            <p className="text-5xl md:text-5xl lg:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-secondary to-primary ">
               Welcome To KGTS
             </p>
-            <p className="mt-4 ml-2 font-semibold text-base md:text-lg">
+            <p className="mt-4 sm:ml-2 font-semibold text-base md:text-lg ">
               Where strategic thinking meets innovation! Join us in exploring the
               game theory complexities of decision-making, and enhancing our
             </p>

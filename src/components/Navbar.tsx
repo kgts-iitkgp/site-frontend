@@ -43,7 +43,7 @@ function Navbar() {
           <p>Team</p>
         </Link>
       </div>
-      <div className="sm:hidden">
+      <div className="sm:hidden ">
         <div className="group flex flex-col items-end">
           <p className="text-3xl group-hover:flex border-2 border-secondary rounded-md px-1 ">
             <RxHamburgerMenu />

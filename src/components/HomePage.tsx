@@ -1,38 +1,56 @@
 "use client";
 import React from "react";
-import { Button } from "./ui/moving-border";
+import { Button } from "./moving-border";
 import Image from "next/image";
-import HeroSectionImg from "../../public/assets/HeroSection.png";
-import Logo from "../../public/assets/KGTSlogo.png";
+import HeroSectionImg from "../../public/images/HeroSection.png";
+import backgroundImg from "../../public/images/background.png";
+import diceImg from "../../public/images/dice.png"
+import Logo from "../../public/images/KGTSlogo.png";
 import Link from "next/link";
 import CountUp from "react-countup";
 import { motion } from "framer-motion";
-import { ImagesSlider } from "./ui/images-slider";
-import DotBackground from './ui/DotBackground';
+import { ImagesSlider } from "./images-slider";
+import DotBackground from './DotBackground';
 
 function HomePage() {
   const images = [
-    "/assets/Intro Sem/image1.jpg",
-    "/assets/Tresure Hunt/image1.jpg",
+    "/images/image1.jpg",
+    "/images/image2.jpg",
   ];
   return (
     <div>
       <DotBackground />
       {/* Hero Section */}
-      <div
-        className="px-4 pt-28 sm:pt-40 pb-4 relative -z-10 w-full text-center bg-cover bg-center"
-        style={{ backgroundImage: `url(${HeroSectionImg.src})`}}
-      >
-        <p className="mt-20 md:mt-0 text-4xl md:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-secondary to-primary">
-          Welcome To KGTS
-        </p>
-        <p className="mt-4 font-semibold text-base md:text-lg text-white max-w-lg mx-auto">
-          Where strategic thinking meets innovation! Join us in exploring the
-          fascinating world of game theory, unraveling the complexities of
-          decision-making, and enhancing our understanding of competitive and
-          cooperative strategies that shape our everyday lives.
-        </p>
+      <div className="relative w-full h-full px-4 pt-28 sm:pt-28 pb-4 bg-cover bg-center flex justify-between items-center">
+        {/* Background Image */}
+        <img
+          src={backgroundImg.src} // the background image without the dice
+          alt="Hero Section Background"
+          className="absolute top-0 left-0 w-full h-full object-cover -z-10"
+        />
+        <div className="flex sm:flex-row items-center flex-col">
+          {/* Dice Image */}
+          <div className="sm:w-1/2">
+            <img
+              src={diceImg.src}
+              alt="Dice"
+              className="transform sm:scale-150 scale-125 sm:-translate-x-16 mx-auto md:mx-0 "
+            />
+          </div>
+          {/* Text Content */}
+          <div className=" text-white sm:w-1/2 mr-5">
+            <p className="text-4xl md:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-secondary to-primary">
+              Welcome To KGTS
+            </p>
+            <p className="mt-4 ml-2 font-semibold text-base md:text-lg">
+              Where strategic thinking meets innovation! Join us in exploring the
+              game theory complexities of decision-making, and enhancing our
+            </p>
+          </div>
+        </div>
       </div>
+
+
       {/* Short Intro */}
       <div className="p-2 flex justify-around items-center">
         <div className="hidden sm:inline">

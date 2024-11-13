@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Logo from "../../public/assets/KGTSlogo.png";
+import Logo from "../../public/images/KGTSlogo.png";
 import Link from "next/link";
 import { RxHamburgerMenu } from "react-icons/rx";
 

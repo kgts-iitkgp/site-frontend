@@ -1,21 +1,18 @@
 "use client";
 import React from "react";
-import { Button } from "./moving-border";
+import { Button } from "../../components/moving-border";
 import Image from "next/image";
-import backgroundImg from "../../public/images/background.png";
-import diceImg from "../../public/images/dice.png"
-import Logo from "../../public/images/KGTSlogo.png";
+import backgroundImg from "../../../public/images/background.png";
+import diceImg from "../../../public/images/dice.png";
+import Logo from "../../../public/images/KGTSlogo.png";
 import Link from "next/link";
 import CountUp from "react-countup";
 import { motion } from "framer-motion";
-import { ImagesSlider } from "./images-slider";
-import DotBackground from './DotBackground';
+import { ImagesSlider } from "../../components/images-slider";
+import DotBackground from "../../components/DotBackground";
 
 function HomePage() {
-  const images = [
-    "/images/image1.jpg",
-    "/images/image2.jpg",
-  ];
+  const images = ["/images/image1.jpg", "/images/image2.jpg"];
   return (
     <div>
       <DotBackground />
@@ -42,13 +39,14 @@ function HomePage() {
               Welcome To KGTS
             </p>
             <p className="mt-4 sm:ml-2 font-semibold text-base md:text-lg ">
-              Where strategic thinking meets innovation! Join us in exploring the
-              game theory complexities of decision-making, and enhancing our
+              Where strategic thinking meets innovation! Join us in exploring
+              the game theory complexities of decision-making, and enhancing our
+              understanding of competitive dynamics, collaboration strategies,
+              and real-world applications.
             </p>
           </div>
         </div>
       </div>
-
 
       {/* Short Intro */}
       <div className="p-2 flex justify-around items-center">

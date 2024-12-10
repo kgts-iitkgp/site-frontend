@@ -9,13 +9,13 @@ export default function About() {
       <DotBackground/>
       <div className="min-h-screen flex flex-col items-center justify-around  text-white my-12">
         <div className="relative z-10 w-full sm:w-4/5 h-full">
-          <div className="p-8 flex flex-col justify-center items-center h-full w-full">
+          <div className="px-8 py-4 sm:p-8 flex flex-col justify-center items-center h-full w-full">
             <div className="text-center">
-              <h1 className="text-5xl font-bold mb-6 bg-gradient-to-b from-secondary to-primary inline-block text-transparent bg-clip-text">
+              <h1 className="text-5xl font-bold mt-4 mb-1 sm:mb-6 bg-gradient-to-b from-secondary to-primary inline-block text-transparent bg-clip-text">
                 About KGTS
               </h1>
             </div>
-            <p className="text-lg text-gray-400 my-6 font-serif">
+            <p className="text-base md:text-lg text-gray-400 my-6 text-center">
               <b>The KGPian Game Theory Society</b>, abbreviated as <b>KGTS</b>,
               is IIT Kharagpur’s game theory organisation. It is a dynamic and
               intellectually stimulating community for students passionate about
@@ -27,22 +27,22 @@ export default function About() {
               featured in Kshitij, the Techno-Management fest of{" "}
               <b>IIT Kharagpur</b>, every year.
             </p>
-            <div className="overflow-hidden w-11/12 rounded-lg shadow-lg">
+            <div className="overflow-hidden w-11/12 rounded-lg shadow-lg pb-4">
               <img
-                src="/demo1.webp"
+                src="/images/heads.jpg"
                 alt="Image 1"
                 className="w-full h-full object-cover transition-transform duration-500 ease-in-out transform hover:scale-110 hover:filter hover:grayscale hover:contrast-125"
               />
             </div>
           </div>
-          <div className="p-8 flex flex-col justify-center items-center">
+          <div className="px-8 py-4 sm:p-8 flex flex-col justify-center items-center">
             <div className="text-center">
-              <h1 className="text-5xl font-bold mb-6 bg-gradient-to-b from-secondary to-primary inline-block text-transparent bg-clip-text">
+              <h1 className="text-5xl font-bold mb-1 sm:mb-6 bg-gradient-to-b from-secondary to-primary inline-block text-transparent bg-clip-text">
                 Our History
               </h1>
             </div>
-            <p className="text-lg text-gray-400 my-6 font-serif">
-              <b className="text-white">Founding</b>
+            <p className="text-base md:text-lg text-center  text-gray-400 my-6">
+              <b className="text-white">FOUNDING</b>
               <br />
               <b>The KGPian Game Theory Society</b> was founded on{" "}
               <b>19th August 2010</b> by <b>Manoj Gadia</b>. It is a student
@@ -56,7 +56,7 @@ export default function About() {
               with more than 50 members.
               <br />
               <br />
-              <b className="text-white">Motive</b>
+              <b className="text-white">MOTIVE</b>
               <br />
               The Society was founded with a main motive to promote concepts of{" "}
               <b>Game Theory</b> and <b>Strategic Thinking</b>. Many situations
@@ -68,14 +68,14 @@ export default function About() {
               statistics. This society promotes these concepts by various means.
             </p>
           </div>
-          <div className="p-8 flex flex-col justify-center items-center">
+          <div className="px-8 py-4 sm:p-8 flex flex-col justify-center items-center">
             <div className="text-center">
-              <h1 className="text-5xl font-bold mb-6 bg-gradient-to-b from-secondary to-primary inline-block text-transparent bg-clip-text">
+              <h1 className="text-5xl font-bold mb-1 sm:mb-6 bg-gradient-to-b from-secondary to-primary inline-block text-transparent bg-clip-text">
                 Highlights
               </h1>
             </div>
-            <p className="text-lg text-gray-400 my-6 font-serif">
-              <b className="text-white">The Art of Strategy Project</b>
+            <p className="text-base md:text-lg  text-gray-400 my-6 text-center">
+              <b className="text-white">THE ART OF STRATEGY PROJECT</b>
               <br />
               This project is started under the advice of Prof. Avinash Dixit,
               emeritus professor of Princeton University. Society members
@@ -85,21 +85,21 @@ export default function About() {
               question bank.
               <br />
               <br />
-              <b className="text-white">Discussion Sessions</b>
+              <b className="text-white">DISCUSSION SESSIONS</b>
               <br />
               In discussion sessions, senior members conduct discussion sessions
               for all the members, explaining the various theoretical concepts,
               along with interesting games and real-life examples.
               <br />
               <br />
-              <b className="text-white">Case Studies</b>
+              <b className="text-white">CASE STUDIES</b>
               <br />
               Society members practice solving case studies using game theory in
               our academic meetings. Senior members solve real life case studies
               in the fields of business and economics.
               <br />
               <br />
-              <b className="text-white">Games</b>
+              <b className="text-white">GAMES</b>
               <br />
               In society meetings, members play strategy-based games among
               themselves to learn how to use game theory concepts in a given
@@ -109,7 +109,7 @@ export default function About() {
             </p>
             <div className="overflow-hidden w-11/12 rounded-lg shadow-lg">
               <img
-                src="/demo2.jpg"
+                src="/images/fullteam.jpg"
                 alt="Image 1"
                 className="w-full h-full object-cover transition-transform duration-500 ease-in-out transform hover:scale-110 hover:filter hover:grayscale hover:contrast-125"
               />

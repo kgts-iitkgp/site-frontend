@@ -6,7 +6,7 @@ import Link from "next/link";
 
 function Footer() {
   return (
-    <div className="border-t-[1px] border-slate-200 flex justify-between items-center bg-black/60  w-full p-2">
+    <div className="text-white border-t-[1px] border-slate-200 flex justify-between items-center bg-black/60  w-full p-2">
       <div className="flex flex-col  sm:flex-row justify-around w-full items-center">
         <div className="flex items-center space-x-4 p-2">
           <div className="rounded-full border-2 border-white p-1">

@@ -1,8 +1,13 @@
-import Image from "next/image";
+"use client";
 
-export default function Home() {
+import Events from "./events/page";
+
+const Home = () => {
+  
   return (
     <div>
     </div>
   );
-}
+};
+
+export default Home;

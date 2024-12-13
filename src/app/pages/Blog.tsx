@@ -1,6 +1,6 @@
 import React from 'react';
 import { BlogCard } from './BlogCard';
-import Image from 'next/image';
+//import Image from 'next/image';
 import demoimg from "/public/demo.jpg"
 
 const BlogPage = () => {

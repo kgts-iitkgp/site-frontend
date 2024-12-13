@@ -1,7 +1,8 @@
+"use client";
 import { useState } from "react";
-import Modal from "../components/Modal";
+import Modal from "../../components/Modal";
 import FieldContainer from "@/components/FieldContainer";
-import "../app/globals.css";
+import "../globals.css";
 
 type Links = {
   link: string;

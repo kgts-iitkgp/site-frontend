@@ -31,7 +31,7 @@ const DotBackground: React.FC = () => {
           const radius = Math.max(dotRadius, maxRadius - dist / 100);
           ctx.beginPath();
           ctx.arc(i, j, radius, 0, Math.PI * 2);
-          ctx.fillStyle = '#7564ef';
+          ctx.fillStyle = '#00BFFF';
           ctx.fill();
         }
       }
@@ -59,7 +59,7 @@ const DotBackground: React.FC = () => {
   return (
     <canvas
       ref={canvasRef}
-      className="fixed top-0 left-0 w-screen h-screen opacity-40 -z-10 pointer-events-auto" // Changed to auto
+      className="fixed top-0 left-0 w-screen h-screen opacity-100 -z-10 pointer-events-auto" // Changed to auto
     />
   );
 };

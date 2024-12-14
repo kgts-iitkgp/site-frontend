@@ -5,17 +5,17 @@ import DotBackground from "@/components/DotBackground";
 
 export default function About() {
   return (
-    <div>
+    <div className="flex justify-center">
       <DotBackground/>
-      <div className="min-h-screen flex flex-col items-center justify-around  text-white my-12">
+      <div className="text-white max-w-[900px] flex flex-col items-center justify-around my-12">
         <div className="relative z-10 w-full sm:w-4/5 h-full">
-          <div className="px-8 py-4 sm:p-8 flex flex-col justify-center items-center h-full w-full">
-            <div className="text-center">
-              <h1 className="text-5xl font-bold mt-4 mb-1 sm:mb-6 bg-gradient-to-b from-secondary to-primary inline-block text-transparent bg-clip-text">
+          <div className="px-8 py-4 sm:p-8 flex flex-col items-center">
+            <div>
+              <h1 className="text-5xl font-bold mt-4 mb-1 sm:mb-6 text-primary">
                 About KGTS
               </h1>
-            </div>
-            <p className="text-base md:text-lg text-gray-400 my-6 text-center">
+            
+            <p className="text-base md:text-lg my-6">
               <b>The KGPian Game Theory Society</b>, abbreviated as <b>KGTS</b>,
               is IIT Kharagpur’s game theory organisation. It is a dynamic and
               intellectually stimulating community for students passionate about
@@ -27,6 +27,7 @@ export default function About() {
               featured in Kshitij, the Techno-Management fest of{" "}
               <b>IIT Kharagpur</b>, every year.
             </p>
+            </div>
             <div className="overflow-hidden w-11/12 rounded-lg shadow-lg pb-4">
               <img
                 src="/images/heads.jpg"
@@ -35,14 +36,14 @@ export default function About() {
               />
             </div>
           </div>
-          <div className="px-8 py-4 sm:p-8 flex flex-col justify-center items-center">
-            <div className="text-center">
-              <h1 className="text-5xl font-bold mb-1 sm:mb-6 bg-gradient-to-b from-secondary to-primary inline-block text-transparent bg-clip-text">
+          <div className="px-8 py-4 sm:p-8 flex flex-col items-center">
+            <div>
+              <h1 className="text-5xl font-bold mb-1 sm:mb-6 text-primary">
                 Our History
               </h1>
-            </div>
-            <p className="text-base md:text-lg text-center  text-gray-400 my-6">
-              <b className="text-white">FOUNDING</b>
+            
+            <p className="text-base md:text-lg my-6">
+              <b className="text-tertiary">FOUNDING</b>
               <br />
               <b>The KGPian Game Theory Society</b> was founded on{" "}
               <b>19th August 2010</b> by <b>Manoj Gadia</b>. It is a student
@@ -56,7 +57,7 @@ export default function About() {
               with more than 50 members.
               <br />
               <br />
-              <b className="text-white">MOTIVE</b>
+              <b className="text-tertiary">MOTIVE</b>
               <br />
               The Society was founded with a main motive to promote concepts of{" "}
               <b>Game Theory</b> and <b>Strategic Thinking</b>. Many situations
@@ -68,14 +69,15 @@ export default function About() {
               statistics. This society promotes these concepts by various means.
             </p>
           </div>
-          <div className="px-8 py-4 sm:p-8 flex flex-col justify-center items-center">
-            <div className="text-center">
-              <h1 className="text-5xl font-bold mb-1 sm:mb-6 bg-gradient-to-b from-secondary to-primary inline-block text-transparent bg-clip-text">
+          </div>
+          <div className="px-8 py-4 sm:p-8 flex flex-col items-center">
+            <div >
+              <h1 className="text-5xl font-bold mb-1 sm:mb-6 text-primary">
                 Highlights
               </h1>
-            </div>
-            <p className="text-base md:text-lg  text-gray-400 my-6 text-center">
-              <b className="text-white">THE ART OF STRATEGY PROJECT</b>
+            
+            <p className="text-base md:text-lg my-6">
+              <b className="text-tertiary">THE ART OF STRATEGY PROJECT</b>
               <br />
               This project is started under the advice of Prof. Avinash Dixit,
               emeritus professor of Princeton University. Society members
@@ -85,21 +87,21 @@ export default function About() {
               question bank.
               <br />
               <br />
-              <b className="text-white">DISCUSSION SESSIONS</b>
+              <b className="text-tertiary">DISCUSSION SESSIONS</b>
               <br />
               In discussion sessions, senior members conduct discussion sessions
               for all the members, explaining the various theoretical concepts,
               along with interesting games and real-life examples.
               <br />
               <br />
-              <b className="text-white">CASE STUDIES</b>
+              <b className="text-tertiary">CASE STUDIES</b>
               <br />
               Society members practice solving case studies using game theory in
               our academic meetings. Senior members solve real life case studies
               in the fields of business and economics.
               <br />
               <br />
-              <b className="text-white">GAMES</b>
+              <b className="text-tertiary">GAMES</b>
               <br />
               In society meetings, members play strategy-based games among
               themselves to learn how to use game theory concepts in a given
@@ -107,6 +109,7 @@ export default function About() {
               being covered during discussion sessions.
               <br />
             </p>
+            </div>
             <div className="overflow-hidden w-11/12 rounded-lg shadow-lg">
               <img
                 src="/images/fullteam.jpg"

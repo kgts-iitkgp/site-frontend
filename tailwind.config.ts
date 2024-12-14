@@ -19,8 +19,8 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
-        primary: "#8c30e3",
-        secondary: "#7564ef",
+        primary: "#00BFFF",
+        secondary: "#00BFFF",
         tertiary: '#c4e1f6',
       },
       boxShadow: {

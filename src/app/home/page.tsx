@@ -2,7 +2,7 @@
 import React from "react";
 import { Button } from "../../components/MovingBorder";
 import Image from "next/image";
-import backgroundImg from "../../../public/images/hero.jpg";
+import backgroundImg from "../../../public/images/chess-bg-3.jpeg";
 import diceImg from "../../../public/images/dice.png";
 import Logo from "../../../public/images/KGTSlogo.png";
 import Link from "next/link";
@@ -24,7 +24,7 @@ function HomePage() {
           alt="Hero Section Background"
           className="absolute top-0 left-0 w-full h-full object-cover -z-10"
         />
-        <div className="flex justify-center sm:justify-end items-center">
+        <div className="flex w-full justify-end sm:justify-end items-center">
           {/* Dice Image */}
           {/* <div className="sm:w-1/2 ">
             <img
@@ -34,11 +34,11 @@ function HomePage() {
             />
           </div> */}
           {/* Text Content */}
-          <div className=" text-white sm:w-1/2 sm:mr-5 relative sm:translate-y-10 sm:-top-20 sm:ml-0 mt-14 sm:mt-7 mx-6 sm:mx-12 items-center text-center sm:text-left">
-            <p className="text-3xl sm:text-5xl mt-5  lg:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-secondary to-primary ">
+          <div className=" text-white flex flex-col justify-center w-[300px] sm:w-[400px] md:w-[500px] lg:w-[600px]  sm:mr-5 relative sm:translate-y-10 sm:-top-20 sm:ml-0 mt-14 sm:mt-7 mx-6 sm:mx-12 items-center text-center sm:items-start sm:text-left ">
+            <p className="text-3xl sm:text-5xl mt-5 text-center sm:text-left  lg:text-7xl font-bold text-primary">
               Welcome To KGTS
             </p>
-            <p className="mt-2 sm:ml-2 font-semibold text-base md:text-lg pb-5">
+            <p className="mt-2  sm:ml-2 font-semibold sm:text-xl pb-5">
               Where strategic thinking meets innovation! Join us in exploring
               the game theory complexities of decision-making, and enhancing our
               understanding of competitive dynamics, collaboration strategies,
@@ -54,7 +54,7 @@ function HomePage() {
           <Image src={Logo} height={300} alt="Logo"></Image>
         </div>
         <div className="flex flex-col items-center sm:items-start space-y-2 p-2">
-          <p className="sm:mt-20 md:mt-0 text-2xl md:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-secondary to-primary">
+          <p className="sm:mt-20 md:mt-0 text-2xl md:text-4xl font-bold text-primary">
             Who Are We?
           </p>
           <p className="mt-4 font-normal text-center sm:text-left text-base md:text-lg text-white sm:w-[600px]">
@@ -63,7 +63,7 @@ function HomePage() {
             founded by Mr Manoj Gadia on 19th August, 2010, dedicated to
             spreading awareness, knowledge and application of Game Theory.
           </p>
-          <Link href={"/"}>
+          <Link href={"/about"}>
             <Button
               borderRadius="1.75rem"
               containerClassName="w-[150px] h-[50px] mx-4 my-2"
@@ -99,7 +99,7 @@ function HomePage() {
           <p className="text-white font-bold text-xl sm:text-2xl">Events</p>
         </div>
         <div className="my-2 flex flex-col sm:flex-row sm:space-x-3 items-center">
-          <p className="sm:mt-20 md:mt-0 text-3xl sm:text-2xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-secondary to-primary">
+          <p className="sm:mt-20 md:mt-0 text-3xl sm:text-2xl md:text-5xl font-bold text-primary">
             <CountUp
               end={69}
               enableScrollSpy={true}
@@ -119,7 +119,7 @@ function HomePage() {
       {/* Carousal of events */}
       <div className="p-2 flex flex-col items-center my-10">
         <div>
-          <p className="sm:mt-20 md:mt-0 text-2xl md:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-secondary to-primary">
+          <p className="sm:mt-20 md:mt-0 text-2xl md:text-4xl font-bold text-primary">
             Glimpses Of Events
           </p>
         </div>
@@ -139,8 +139,8 @@ function HomePage() {
               }}
               className="z-50 w-full flex flex-col justify-center items-center"
             >
-              <Link href={"/"}>
-                <button className="px-4 py-2 backdrop-blur-sm border bg-gradient-to-r from-secondary/30  to-primary/30 hover:from-secondary hover:to-primary hover:scale-105 transition-all duration-300 text-white mx-auto text-center rounded-full  mt-64">
+              <Link href={"/events"}>
+                <button className="px-4 py-2 backdrop-blur-sm border bg-primary/30 hover:bg-primary hover:scale-105 transition-all duration-300 text-white mx-auto text-center rounded-full  mt-64">
                   <span>See More →</span>
                   <div className="absolute inset-x-0  h-px -bottom-px bg-gradient-to-r w-3/4 mx-auto from-transparent via-emerald-500 to-transparent" />
                 </button>

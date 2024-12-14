@@ -1,0 +1,108 @@
+/* components/team/team.module.css */
+
+.teamPage {
+    color: #FFFFFF;
+    background-color: #1c1c1e;
+    text-align: center;
+    padding: 2rem;
+}
+
+.title {
+    color: #9b59b6;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.section {
+    margin-top: 2rem;
+}
+
+
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.tabs button {
+    background-color: #2c2c2e;
+    border: none;
+    color: #FFFFFF;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.tabs button:hover {
+    background-color: #9b59b6;
+}
+
+
+
+.cardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+
+
+
+
+/* TeamCard Container */
+.card {
+    background-color: #9b59b6; /* Dark background */
+    border-radius: 12px;
+    padding: 16px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Photo Styling */
+.photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 10px;
+    border: 3px solid #4b0082; /* Purple border */
+}
+
+/* Name Styling */
+.name {
+    font-size: 20px;
+    color: #ffffff; /* White text */
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+/* Position Styling */
+.position {
+    font-size: 16px;
+    color: #cfcfcf; /* Light gray */
+    margin-bottom: 12px;
+}
+
+/* Social Links */
+.socialLinks {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.socialLinks a {
+    color: #ffffff; /* White icons */
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.socialLinks a:hover {
+    color: #4b0082; /* Purple on hover */
+}

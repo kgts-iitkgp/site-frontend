@@ -51,7 +51,7 @@ const Events = () => {
                   setPast(false);
                 }}
               >
-                Ongoing Events
+                Ongoing
               </p>
               <p
                 className={`bg-black px-4 py-1 rounded-full border border-primary cursor-pointer transition-all duration-200 ${
@@ -63,7 +63,7 @@ const Events = () => {
                   setPast(false);
                 }}
               >
-                Upcoming Events
+                Upcoming
               </p>
               <p
                 className={`bg-black px-4 py-1 rounded-full border border-primary cursor-pointer transition-all duration-200 ${
@@ -75,7 +75,7 @@ const Events = () => {
                   setPast(true);
                 }}
               >
-                Past Events
+                Past
               </p>
             </div>
             {Ongoing.length > 0 && ongoing ? (

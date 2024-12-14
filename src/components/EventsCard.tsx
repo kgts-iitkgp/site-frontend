@@ -19,13 +19,13 @@ const EventCard: React.FC<EventCardProps> = ({ event, type, openPopup }) => {
   return (
     <div
       ref={cardRef}
-      className={`flex justify-center mb-8  transition-transform duration-1000 ease-in-out${
+      className={`h-[450px] sm:h-[250px] flex justify-center mb-8  transition-transform duration-1000 ease-in-out${
         isVisible ? "opacity-100 scale-100" : "opacity-0 scale-0"
       }`}
     >
-      <div className="flex flex-col sm:flex-row border-secondary border-opacity-90 border-2 rounded-lg shadow-lg overflow-hidden w-full">
+      <div className="flex flex-col sm:flex-row border-secondary border-opacity-90 border-2 rounded-lg shadow-lg overflow-hidden w-[300px] sm:w-[600px] md:w-[700px]">
         {/* Image Section */}
-        <div className="sm:w-1/2 sm:h-full w-full h-56 relative ">
+        <div className="h-[250px] sm:h-full w-full sm:w-1/2 relative ">
           <Image
             src={event.image ?? ""}
             alt={event.title}
@@ -36,13 +36,15 @@ const EventCard: React.FC<EventCardProps> = ({ event, type, openPopup }) => {
         </div>
 
         {/* Content Section */}
-        <div className="p-6 w-full lg:w-1/2 flex flex-col justify-between bg-black">
-          <h3 className="text-xl lg:text-2xl mb-4 font-bold text-primary uppercase">
-            {event.title}
-          </h3>
-          <p className="text-sm lg:text-base text-textColor mb-4   ">
-            {event.description}
-          </p>
+        <div className="p-4 w-full h-[200px] sm:h-full lg:w-1/2 flex flex-col justify-between bg-black">
+          <div>
+            <h3 className="text-xl lg:text-2xl font-bold text-primary uppercase">
+              {event.title}
+            </h3>
+            <p className="text-sm lg:text-base text-textColor   ">
+              {event.description}
+            </p>
+          </div>
 
           {type === "upcoming" && (
             <div className="text-tertiary   ">
@@ -54,18 +56,18 @@ const EventCard: React.FC<EventCardProps> = ({ event, type, openPopup }) => {
             <div className="text-xs lg:text-sm text-secondaryColor mt-2   ">
               <p className="mb-1">Venue: {event.venue}</p>
               <p>Time: {event.startDate}</p>
-              <div className="mt-4">
+              <div className="mt-1 flex justify-center">
                 <Button
                   borderRadius="1.75rem"
-                  containerClassName="w-[150px] h-[50px] mx-4 my-2"
+                  containerClassName="w-[100px] h-[35px] mx-4 my-2"
                   className="bg-black"
                   onClick={() => openPopup(event)}
                 >
-                    {/* <FontAwesomeIcon
+                  {/* <FontAwesomeIcon
                       icon={faArrowLeftLong}
                       className="mr-2 hover:animate-wiggle transition duration-200"
                     /> */}
-                    Details
+                  Details
                 </Button>
               </div>
             </div>
@@ -73,10 +75,10 @@ const EventCard: React.FC<EventCardProps> = ({ event, type, openPopup }) => {
 
           {/* Register Button for Ongoing Events */}
           {type === "ongoing" && (
-            <div className="mt-4">
+            <div className="mt-1 flex justify-center">
               <Button
                 borderRadius="1.75rem"
-                containerClassName="w-[150px] h-[50px] mx-4 my-2"
+                containerClassName="w-[100px] h-[35px] mx-4 my-2"
                 className="bg-black"
               >
                 <a href="https://udyamregistration.gov.in/Government-India/Ministry-MSME-registration.htm">

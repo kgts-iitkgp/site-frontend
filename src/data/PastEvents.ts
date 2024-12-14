@@ -15,7 +15,7 @@ export const Past : Event[] = [
     {
         id : "1",
         title : "Treasure Hunt",
-        description: "Assemble your crew and prepare to embark on a quest across the IIT Kharagpur campus. This is not just any hunt - your path will be filled with brain-bending riddles and strategic challenges that will test your wit and teamwork.",
+        description: "Assemble your crew and prepare to embark on a quest across the IIT Kharagpur campus.  ",
         startDate: "2024-08-25",
         endDate: "2024-08-25",
         venue : "Nalanda",

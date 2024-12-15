@@ -23,7 +23,7 @@ const EventCard: React.FC<EventCardProps> = ({ event, type, openPopup }) => {
         isVisible ? "opacity-100 scale-100" : "opacity-0 scale-0"
       }`}
     >
-      <div className="flex flex-col sm:flex-row border-secondary border-opacity-90 border-2 rounded-lg shadow-lg overflow-hidden w-[300px] sm:w-[600px] md:w-[700px]">
+      <div className="flex flex-col sm:flex-row border-secondary border-opacity-90 border-2 rounded-lg shadow-lg overflow-hidden w-[300px] sm:w-[600px] md:w-full">
         {/* Image Section */}
         <div className="h-[250px] sm:h-full w-full sm:w-1/2 relative ">
           <Image

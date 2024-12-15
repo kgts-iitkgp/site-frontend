@@ -21,18 +21,18 @@ function HomePage() {
     <div className="min-h-screen">
       <DotBackground />
       {/* Hero Section */}
-      <div className="relative w-full h-full px-4 sm:pt-28 pb-4 bg-cover bg-center flex justify-center items-center">
+      <div className="relative w-full h-full lg:h-screen px-4 sm:pt-28 pb-4 bg-cover bg-center flex justify-center items-center">
         {/* Background Image */}
         <img
           src={backgroundImg.src}
           alt="Hero Section Background"
-          className="absolute top-0 left-0 w-full h-full object-cover -z-10"
+          className="absolute top-0 left-0 w-full h-full object-cover"
         />
-        <div className="flex w-full h-[380px] sm:h-auto justify-center sm:justify-end items-end sm:items-center">
+        <div className="flex w-full h-[380px] sm:h-auto justify-center sm:justify-end items-end sm:items-center lg:mr-20 xl:mr-40">
           {/* Text Content */}
           <div className=" text-white flex flex-col justify-center w-[300px] sm:w-[400px] md:w-[500px] lg:w-[600px]  sm:mr-5 relative sm:translate-y-10 sm:-top-20 sm:ml-0 mt-14 sm:mt-7 mx-6 sm:mx-12 items-center text-center sm:items-start sm:text-left ">
-            <p className="text-3xl sm:text-5xl mt-5 text-center sm:text-left  lg:text-7xl font-bold text-primary">
-              Welcome To KGTS
+            <p className="text-3xl sm:text-5xl mt-5 text-center sm:text-left  lg:text-6xl xl:text-7xl font-bold text-primary">
+              <span className="text-4xl">Welcome To</span> <br />The KGPian Game Theory Society
             </p>
             <p className="mt-2 text-xs  sm:ml-2 font-semibold sm:text-xl pb-5">
               Where strategic thinking meets innovation! Join us in exploring
@@ -119,7 +119,7 @@ function HomePage() {
             Glimpses Of Events
           </p>
         </div>
-        <div className="my-10 w-[90%] mx-4 flex justify-center ">
+        <div className="my-10 w-[90%] mx-4 flex justify-center max-w-[900px] ">
           <ImagesSlider className="h-[23rem]" images={images}>
             <motion.div
               initial={{

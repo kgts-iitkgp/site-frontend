@@ -30,10 +30,10 @@ const Events = () => {
   };
 
   return (
-    <div className="w-screen">
+    <div className="w-screen min-h-screen">
       <DotBackground />
       <div className="flex justify-center">
-        <div className="max-w-[900px] ">
+        <div className=" lg:w-[900px] ">
           <div className=" py-8 px-4">
             <div>
               <p className="text-3xl sm:text-5xl mb-5 mt-12 font-bold text-primary text-center">
@@ -80,14 +80,6 @@ const Events = () => {
             </div>
             {Ongoing.length > 0 && ongoing ? (
               <section className="my-8">
-                <div className="flex">
-                  {/* <h2 className={`text-4xl font-bold mb-8 mt-8 uppercase text-primaryColor transition duration-500 font-title ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}
-              >Ongoing Events</h2> */}
-                  {/* <p 
-               className="text-3xl sm:text-5xl mb-5 mt-12 font-bold text-primary">
-               Ongoing Events
-            </p> */}
-                </div>
                 <div className="flex flex-col space-y-8  w-full justify-center">
                   {Ongoing.map((event) => (
                     <EventCard
@@ -99,16 +91,14 @@ const Events = () => {
                   ))}
                 </div>
               </section>
-            ) : null}
+            ) : (ongoing? (<section className="my-8">
+              <div className="flex items-center w-full justify-center text-tertiary sm:text-xl">
+                No ongoing events
+              </div>
+            </section>):null)}
 
             {Upcoming.length > 0 && upcoming ? (
               <section className="my-8">
-                <div className="">
-                  {/* <h2 className={`text-4xl font-bold mb-8 uppercase  text-primaryColor  transition duration-500 font-title ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>Upcoming Events</h2>   */}
-                  {/* <p className="text-3xl sm:text-5xl my-5  font-bold text-primary">
-                Upcoming Events
-            </p> */}
-                </div>
                 <div className="content-none h-[3px] w-80 text-white flex justify-center"></div>
                 <div className="flex flex-col space-y-8  w-full justify-center">
                   {Upcoming.map((event) => (
@@ -121,16 +111,14 @@ const Events = () => {
                   ))}
                 </div>
               </section>
-            ) : null}
+            ) : (upcoming? (<section className="my-8">
+              <div className="flex items-center w-full justify-center text-tertiary sm:text-xl">
+                No upcoming events
+              </div>
+            </section>):null)}
 
             {Past.length > 0 && past ? (
               <section className="my-8">
-                <div className="">
-                  {/* <h2 className={`text-4xl font-bold mb-8 uppercase text-primaryColor transition duration-500 font-title ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>Past Events</h2> */}
-                  {/* <p className="text-3xl sm:text-5xl my-5 font-bold text-primary">
-              Past Events
-            </p> */}
-                </div>
                 <div className="flex flex-col space-y-8 w-full justify-center">
                   {Past.map((event) => (
                     <EventCard
@@ -142,7 +130,11 @@ const Events = () => {
                   ))}
                 </div>
               </section>
-            ) : null}
+            ) : (past? (<section className="my-8">
+              <div className="flex items-center w-full justify-center text-tertiary sm:text-xl">
+                No past events
+              </div>
+            </section>):null)}
 
             {popupEvent && <Popup event={popupEvent} closePopup={closePopup} />}
           </div>

@@ -9,7 +9,7 @@ import { FaGamepad } from "react-icons/fa";
 
 export default function About() {
   return (
-    <div>
+    <div className="min-h-screen">
       <DotBackground />
       <div className="relative bg-black w-full h-full px-4 sm:pt-28 pb-4 bg-cover bg-center flex justify-center items-center">
         <img

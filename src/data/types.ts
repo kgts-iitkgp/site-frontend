@@ -11,5 +11,15 @@ export interface Event {
     images? : StaticImageData[];
   }
 
+export interface Profile {
+  id: string;
+  name: string;
+  designation: string;
+  image: string;
+  FBlink: string;
+  InstaLink: string;
+  LinkedInLink: string;
+}
+
 
   

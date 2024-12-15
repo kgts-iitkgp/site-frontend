@@ -80,7 +80,7 @@ const BlogPage = () => {
   ];
 
   return (
-    <div>
+    <div className="min-h-screen">
       <DotBackground />
       <div className="py-10 px-20 my-4">
         <p className="text-3xl sm:text-5xl mb-5 mt-12 font-bold text-primary text-center">

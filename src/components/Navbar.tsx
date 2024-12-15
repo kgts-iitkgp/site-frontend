@@ -37,7 +37,7 @@ function Navbar() {
           <p>Resources</p>
         </Link> */}
         <Link
-          href={"/"}
+          href={"/teams"}
           className="relative inline-block before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-0 before:bg-gradient-to-r from-secondary to-primary before:transition-all before:duration-300 hover:before:w-full"
         >
           <p>Team</p>
@@ -68,7 +68,7 @@ function Navbar() {
               <Link href={"/"}>Resources</Link>
             </div> */}
             <div className="px-2 hover:bg-gradient-to-r from-secondary/60 to-primary/60 rounded-md cursor-pointer hover:scale-105 transition ease-in-out duration-200">
-              <Link href={"/"}>Team</Link>
+              <Link href={"/teams"}>Team</Link>
             </div>
             <div className="px-2 hover:bg-gradient-to-r from-secondary/60 to-primary/60 rounded-md cursor-pointer hover:scale-105 transition ease-in-out duration-200">
               <Link href={"/about"}>About</Link>

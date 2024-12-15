@@ -14,7 +14,7 @@ import DotBackground from "../../components/DotBackground";
 function HomePage() {
   const images = ["/images/image1.jpg", "/images/image2.jpg"];
   return (
-    <div>
+    <div className="min-h-screen">
       <DotBackground />
       {/* Hero Section */}
       <div className="relative w-full h-full px-4 sm:pt-28 pb-4 bg-cover bg-center flex justify-center items-center">

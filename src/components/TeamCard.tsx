@@ -41,13 +41,13 @@ export const TeamCard: React.FC<BlogCardProps> = ({
       </div>
       <div className="absolute transition-all duration-400 opacity-0 hover:opacity-100 h-full w-full flex justify-center items-center bg-black/70">
         <div className="flex space-x-7 text-4xl text-primary">
-          <Link href={"/"} className="transition-all duration-300 hover:scale-110 active:scale-95">
+          <Link href={FBLink} className="transition-all duration-300 hover:scale-110 active:scale-95">
             <FaFacebook />
           </Link>
-          <Link href={"/"} className="transition-all duration-300 hover:scale-110 active:scale-95">
+          <Link href={InstaLink} className="transition-all duration-300 hover:scale-110 active:scale-95">
             <FaInstagram />
           </Link>
-          <Link href={"/"} className="transition-all duration-300 hover:scale-110 active:scale-95">
+          <Link href={LinkedInLink} className="transition-all duration-300 hover:scale-110 active:scale-95">
             <FaLinkedin />
           </Link>
         </div>

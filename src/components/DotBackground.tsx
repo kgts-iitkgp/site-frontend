@@ -59,7 +59,7 @@ const DotBackground: React.FC = () => {
   return (
     <canvas
       ref={canvasRef}
-      className="fixed top-0 left-0 w-screen h-screen opacity-100 -z-10 pointer-events-auto" // Changed to auto
+      className="fixed top-0 left-0 w-screen h-screen opacity-60 -z-10 pointer-events-auto" // Changed to auto
     />
   );
 };

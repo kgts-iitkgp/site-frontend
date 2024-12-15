@@ -30,12 +30,12 @@ function Navbar() {
         >
           <p>Events</p>
         </Link>
-        <Link
+        {/* <Link
           href={"/"}
           className="relative inline-bloc before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-0 before:bg-gradient-to-r from-secondary to-primary before:transition-all before:duration-300 hover:before:w-full"
         >
           <p>Resources</p>
-        </Link>
+        </Link> */}
         <Link
           href={"/"}
           className="relative inline-block before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-0 before:bg-gradient-to-r from-secondary to-primary before:transition-all before:duration-300 hover:before:w-full"
@@ -64,9 +64,9 @@ function Navbar() {
             <div className="px-2 hover:bg-gradient-to-r from-secondary/60 to-primary/60 rounded-md cursor-pointer hover:scale-105 transition ease-in-out duration-200">
               <Link href={"/events"}>Events</Link>
             </div>
-            <div className="px-2 hover:bg-gradient-to-r from-secondary/60 to-primary/60 rounded-md cursor-pointer hover:scale-105 transition ease-in-out duration-200">
+            {/* <div className="px-2 hover:bg-gradient-to-r from-secondary/60 to-primary/60 rounded-md cursor-pointer hover:scale-105 transition ease-in-out duration-200">
               <Link href={"/"}>Resources</Link>
-            </div>
+            </div> */}
             <div className="px-2 hover:bg-gradient-to-r from-secondary/60 to-primary/60 rounded-md cursor-pointer hover:scale-105 transition ease-in-out duration-200">
               <Link href={"/"}>Team</Link>
             </div>

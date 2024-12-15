@@ -24,7 +24,7 @@ function HomePage() {
           alt="Hero Section Background"
           className="absolute top-0 left-0 w-full h-full object-cover -z-10"
         />
-        <div className="flex w-full justify-end sm:justify-end items-center">
+        <div className="flex w-full h-[400px] sm:h-auto justify-center sm:justify-end items-end sm:items-center">
           {/* Dice Image */}
           {/* <div className="sm:w-1/2 ">
             <img

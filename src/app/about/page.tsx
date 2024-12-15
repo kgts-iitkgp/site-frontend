@@ -35,7 +35,7 @@ export default function About() {
       <div>
         <div className="flex flex-col justify-center items-center">
           <div className="text-center mt-20">
-            <h1 className="text-5xl font-bold mb-1 sm:mb-6 bg-gradient-to-b from-secondary to-primary inline-block text-transparent bg-clip-text">
+            <h1 className="text-3xl sm:text-5xl mt-5 text-center font-bold text-primary">
               Our History
             </h1>
           </div>
@@ -49,7 +49,7 @@ export default function About() {
                 />
               </div>
               <div className="w-full sm:w-1/2 h-auto text-base md:text-lg text-left text-white my-6 mx-6">
-                <p className="text-tertiary text-4xl font-bold my-2">
+                <p className="text-tertiary text-2xl md:text-3xl lg:text-4xl font-bold my-2">
                   Founding
                 </p>
                 <p>
@@ -71,7 +71,7 @@ export default function About() {
           </div>
           <div className="w-full md:w-4/5 h-auto px-8 py-4 sm:p-8 flex flex-col-reverse sm:flex-row justify-center items-center">
             <div className="w-full sm:w-1/2 h-auto text-base md:text-lg text-left text-white my-6 mx-6">
-              <p className="text-tertiary text-4xl font-bold my-2">Motive</p>
+              <p className="text-tertiary text-2xl md:text-3xl lg:text-4xl font-bold my-2">Motive</p>
               <p>
                 {" "}
                 The Society was founded with a main motive to promote concepts
@@ -96,17 +96,17 @@ export default function About() {
         </div>
         <div className="flex flex-col justify-center">
           <div className="text-center mt-20">
-            <h1 className="text-5xl font-bold mb-1 sm:mb-6 bg-gradient-to-b from-secondary to-primary inline-block text-transparent bg-clip-text">
+            <h1 className="text-3xl sm:text-5xl mt-5 text-center font-bold text-primary">
               Our Activities
             </h1>
           </div>
           <div className="mx-6 flex flex-col justify-center items-center">
             <div className="flex flex-col sm:flex-row sm:justify-around justify-center items-center">
-              <div className="w-4/5 sm:w-[40%] h-auto flex flex-col items-center">
+              <div className="w-4/5 mt-4 sm:w-[40%] h-auto flex flex-col items-center">
                 <PiStrategyBold
-                  style={{ width: 100, height: 100, color: "white" }}
+                  className="text-white w-[80px] h-[80px] sm:w-[100px] sm:h-[100px]"
                 />
-                <p className="text-base md:text-lg  text-tertiary my-6 text-center">
+                <p className="text-sm sm:text-base md:text-lg lg:text-xl  text-tertiary my-6 text-center">
                   <b className="text-white">THE ART OF STRATEGY PROJECT</b>
                   <br />
                   This project is started under the advice of Prof. Avinash
@@ -119,11 +119,11 @@ export default function About() {
                   <br />
                 </p>
               </div>
-              <div className="w-4/5 sm:w-[40%] h-auto flex flex-col items-center">
+              <div className="w-4/5 mt-4 sm:w-[40%] h-auto flex flex-col items-center">
                 <GoCommentDiscussion
-                  style={{ width: 100, height: 100, color: "white" }}
+                  className="text-white w-[80px] h-[80px] sm:w-[100px] sm:h-[100px]"
                 />
-                <p className="text-base md:text-lg  text-tertiary my-6 text-center">
+                <p className="text-sm sm:text-base md:text-lg lg:text-xl  text-tertiary my-6 text-center">
                   <b className="text-white">DISCUSSION SESSIONS</b>
                   <br />
                   In discussion sessions, senior members conduct discussion
@@ -135,11 +135,11 @@ export default function About() {
               </div>
             </div>
             <div className="flex flex-col sm:flex-row sm:justify-around justify-center items-center">
-              <div className="w-4/5 sm:w-[40%] h-auto flex flex-col items-center">
+              <div className="w-4/5 mt-4 sm:w-[40%] h-auto flex flex-col items-center">
                 <FaBookOpen
-                  style={{ width: 100, height: 100, color: "white" }}
+                  className="text-white w-[80px] h-[80px] sm:w-[100px] sm:h-[100px]"
                 />
-                <p className="text-base md:text-lg  text-tertiary my-6 text-center">
+                <p className="text-sm sm:text-base md:text-lg lg:text-xl  text-tertiary my-6 text-center">
                   <b className="text-white">CASE STUDIES</b>
                   <br />
                   Society members practice solving case studies using game
@@ -148,11 +148,11 @@ export default function About() {
                   <br />
                 </p>
               </div>
-              <div className="w-4/5 sm:w-[40%] h-auto flex flex-col items-center">
+              <div className="w-4/5 mt-4 sm:w-[40%] h-auto flex flex-col items-center">
                 <FaGamepad
-                  style={{ width: 100, height: 100, color: "white" }}
+                  className="text-white w-[80px] h-[80px] sm:w-[100px] sm:h-[100px]"
                 />
-                <p className="text-base md:text-lg  text-tertiary my-6 text-center">
+                <p className="text-sm sm:text-base md:text-lg lg:text-xl  text-tertiary my-6 text-center">
                   <b className="text-white">GAMES</b>
                   <br />
                   In society meetings, members play strategy-based games among

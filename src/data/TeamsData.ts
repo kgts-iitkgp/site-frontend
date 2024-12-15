@@ -8,7 +8,7 @@ export const President: Profile[] = [
     image: "/images/profiles/saharsh.jpg",
     FBLink: "https://www.facebook.com/saharsh.agrawal.in",
     InstaLink: "https://www.instagram.com/saharshagrawal_/",
-    LinkedInLink: "linkedin.com/in/saharshagrawal1",
+    LinkedInLink: "https://linkedin.com/in/saharshagrawal1",
   },
 ];
 

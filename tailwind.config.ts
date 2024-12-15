@@ -16,6 +16,12 @@ const config: Config = {
 
   theme: {
     extend: {
+      // colors: {
+      //   primaryBg: "#000000",
+      //   accent1: "#00ffff",
+      //   accent2: "#00BFFF",
+      //   
+      // },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
@@ -34,6 +40,7 @@ const config: Config = {
       },
       animation: {
         wiggle: 'wiggle 0.5s ease-in-out',
+        cardbg: "#212121",
       },
     },
     fontFamily : {

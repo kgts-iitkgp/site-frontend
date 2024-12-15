@@ -1,9 +1,11 @@
-import Image from "next/image";
-import BlogPage from "./blogs/page";
-import demo from "./demo.jpg"
+"use client";
 
-export default function Home() {
+const Home = () => {
+  
   return (
-    <BlogPage />
+    <div>
+    </div>
   );
-}
+};
+
+export default Home;

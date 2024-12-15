@@ -19,7 +19,7 @@ const EventCard: React.FC<EventCardProps> = ({ event, type, openPopup }) => {
   return (
     <div
       ref={cardRef}
-      className={`h-[450px] sm:h-[250px] flex justify-center mb-8  transition-transform duration-1000 ease-in-out${
+      className={`h-[450px] sm:h-[250px] flex justify-center mb-1  transition-transform duration-1000 ease-in-out${
         isVisible ? "opacity-100 scale-100" : "opacity-0 scale-0"
       }`}
     >

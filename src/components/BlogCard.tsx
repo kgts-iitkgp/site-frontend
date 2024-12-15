@@ -15,7 +15,7 @@ type BlogCardProps = {
 
 export const BlogCard: React.FC<BlogCardProps> = ({ id, title, author, date, words, content, image, link }) => {
   return (
-      <div className="relative max-w-[300px] bg-cardbg shadow-md overflow-hidden transform transition-all duration-300 hover:shadow-lg hover:shadow-primary/50 border-2 border-tertiary w-full mx-auto rounded-lg hover:-translate-y-2 h-full flex flex-col justify-center">
+      <div className="relative cursor-default bg-black max-w-[300px] bg-cardbg shadow-md overflow-hidden transform transition-all duration-300 border-2 border-primary w-full mx-auto rounded-2xl hover:-translate-y-2 h-full flex flex-col justify-center">
         <div className="p-3 bg-cardbg overflow-hidden">
           <Image
             src={`${image}`}
@@ -25,13 +25,7 @@ export const BlogCard: React.FC<BlogCardProps> = ({ id, title, author, date, wor
             className="w-full h-40 object-cover rounded"
           />
         </div>
-        <Link href={`${link}`}>
-          <div className="relative w-full flex flex-col justify-end z-10 h-10">
-            <button className="px-5 py-2 bg-background text-tertiary rounded-full border border-transparent hover:border-primary opacity-70 hover:opacity-100 hover:shadow-lg focus:outline-none transition-all duration-300 self-center">
-              Read more
-            </button>
-          </div>
-        </Link>
+        
         <div className="p-3 bg-cardbg text-white shadow-inner">
           <h2 className="text-lg font-extrabold text-primary mb-1">
             {title}
@@ -43,15 +37,13 @@ export const BlogCard: React.FC<BlogCardProps> = ({ id, title, author, date, wor
             {content.slice(0, words)}...
           </p>
         </div>
-
-        <div className="absolute inset-0 opacity-0 hover:opacity-100 bg-black bg-opacity-20 transition-opacity duration-300 z-0">
-          <div className="flex items-center justify-center h-full text-center text-white p-4">
+        <Link href={`${link}`}>
+          <div className="relative w-full flex flex-col justify-end z-10 h-10 my-2">
+            <button className="px-5 py-2 hover:bg-tertiary rounded-full border-2 border-primary text-white focus:outline-none transition-all duration-300 self-center">
+              Read more
+            </button>
           </div>
-        </div>
-        {/* <div className="absolute inset-0 opacity-0 hover:opacity-100 bg-black bg-opacity-20 transition-opacity duration-300">
-          <div className="flex items-center justify-center h-full text-center text-white p-4">
-          </div>
-        </div> */}
+        </Link>
       </div>
   );
 };

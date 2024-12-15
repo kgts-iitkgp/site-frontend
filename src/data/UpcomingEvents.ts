@@ -3,6 +3,7 @@ import { Event } from "./types";
 import Tech from "/public/images/Tech_workshop.jpg"
 import Stratathon from '/public/images/Stratathon.jpg'
 import war from "/public/images/war_of_wits.jpg"
+import nashify from '../../public/images/Nashify.jpg'
 
 export const Upcoming : Event[] = [
     {
@@ -27,5 +28,12 @@ export const Upcoming : Event[] = [
         description: "Four-week long event on Web Development to give begineers a glimpse of website making.",
         month : "February",
         image : Tech,
+    },
+    {
+        id : "5",
+        title : "Nashify",
+        description: "An electrifying showdown where cunning minds collide and strategies are tested to their breaking point!  ",
+        month : "January",
+        image : nashify,
     },
 ]

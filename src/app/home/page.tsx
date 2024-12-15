@@ -3,7 +3,6 @@ import React from "react";
 import { Button } from "../../components/MovingBorder";
 import Image from "next/image";
 import backgroundImg from "../../../public/images/chess-bg-3.jpeg";
-import diceImg from "../../../public/images/dice.png";
 import Logo from "../../../public/images/KGTSlogo.png";
 import Link from "next/link";
 import CountUp from "react-countup";
@@ -12,7 +11,12 @@ import { ImagesSlider } from "../../components/ImageSlider";
 import DotBackground from "../../components/DotBackground";
 
 function HomePage() {
-  const images = ["/images/image1.jpg", "/images/image2.jpg"];
+  const images = [
+    "/images/image1.jpg",
+    "/images/image2.jpg",
+    "/images/Treasure_hunt_2.jpg",
+    "/images/Treasure_hunt_8.jpg",
+  ];
   return (
     <div className="min-h-screen">
       <DotBackground />
@@ -20,19 +24,11 @@ function HomePage() {
       <div className="relative w-full h-full px-4 sm:pt-28 pb-4 bg-cover bg-center flex justify-center items-center">
         {/* Background Image */}
         <img
-          src={backgroundImg.src} // the background image without the dice
+          src={backgroundImg.src}
           alt="Hero Section Background"
           className="absolute top-0 left-0 w-full h-full object-cover -z-10"
         />
-        <div className="flex w-full h-[400px] sm:h-auto justify-center sm:justify-end items-end sm:items-center">
-          {/* Dice Image */}
-          {/* <div className="sm:w-1/2 ">
-            <img
-              src={diceImg.src}
-              alt="Dice"
-              className="transform sm:scale-150 sm:-translate-x-16 mx-auto md:mx-0 translate-y-36 sm:-translate-y-0"
-            />
-          </div> */}
+        <div className="flex w-full h-full sm:h-auto justify-center sm:justify-end items-end sm:items-center">
           {/* Text Content */}
           <div className=" text-white flex flex-col justify-center w-[300px] sm:w-[400px] md:w-[500px] lg:w-[600px]  sm:mr-5 relative sm:translate-y-10 sm:-top-20 sm:ml-0 mt-14 sm:mt-7 mx-6 sm:mx-12 items-center text-center sm:items-start sm:text-left ">
             <p className="text-3xl sm:text-5xl mt-5 text-center sm:text-left  lg:text-7xl font-bold text-primary">
@@ -77,9 +73,9 @@ function HomePage() {
       {/* Statistics */}
       <div className="flex flex-col sm:flex-row items-center justify-evenly sm:justify-evenly p-3 sm:mb-10">
         <div className="my-2 flex flex-col sm:flex-row sm:space-x-3 items-center">
-          <p className="sm:mt-20 md:mt-0 text-3xl sm:text-2xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-secondary to-primary">
+          <p className="sm:mt-20 md:mt-0 text-3xl sm:text-2xl md:text-5xl font-bold text-primary">
             <CountUp
-              end={50}
+              end={5}
               enableScrollSpy={true}
               useIndianSeparators={true}
             />
@@ -88,9 +84,9 @@ function HomePage() {
           <p className="text-white font-bold text-xl sm:text-2xl">Articles</p>
         </div>
         <div className="my-2 flex flex-col sm:flex-row sm:space-x-3 items-center">
-          <p className="sm:mt-20 md:mt-0 text-3xl sm:text-2xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-secondary to-primary">
+          <p className="sm:mt-20 md:mt-0 text-3xl sm:text-2xl md:text-5xl font-bold text-primary">
             <CountUp
-              end={10}
+              end={5}
               enableScrollSpy={true}
               useIndianSeparators={true}
             />
@@ -101,7 +97,7 @@ function HomePage() {
         <div className="my-2 flex flex-col sm:flex-row sm:space-x-3 items-center">
           <p className="sm:mt-20 md:mt-0 text-3xl sm:text-2xl md:text-5xl font-bold text-primary">
             <CountUp
-              end={69}
+              end={10}
               enableScrollSpy={true}
               useIndianSeparators={true}
             />
@@ -142,7 +138,6 @@ function HomePage() {
               <Link href={"/events"}>
                 <button className="px-4 py-2 backdrop-blur-sm border bg-primary/30 hover:bg-primary hover:scale-105 transition-all duration-300 text-white mx-auto text-center rounded-full  mt-64">
                   <span>See More →</span>
-                  <div className="absolute inset-x-0  h-px -bottom-px bg-gradient-to-r w-3/4 mx-auto from-transparent via-emerald-500 to-transparent" />
                 </button>
               </Link>
             </motion.div>

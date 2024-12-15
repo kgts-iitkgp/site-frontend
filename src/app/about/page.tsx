@@ -17,7 +17,7 @@ export default function About() {
           alt="full team image"
           className="absolute top-0 left-0 w-full h-full object-cover opacity-80"
         />
-        <div className="z-20 flex h-[400px] w-[300px] md:w-[600px] lg:w-[900px] sm:h-[650px] justify-center items-end md:-translate-y-28 lg:-translate-y-20">
+        <div className="z-20 flex h-[400px] w-[300px] md:w-[700px] lg:w-[900px] sm:h-[650px] justify-center items-end md:-translate-y-28 lg:-translate-y-20">
           {/* Text Content */}
           <div className=" text-white flex flex-col justify-center ">
             <p className="text-3xl sm:text-5xl mt-5 text-center lg:text-7xl font-bold text-primary">
@@ -32,7 +32,7 @@ export default function About() {
           </div>
         </div>
       </div>
-      <div>
+      <div className="w-full flex flex-col items-center">
         <div className="flex flex-col justify-center items-center">
           <div className="text-center mt-20">
             <h1 className="text-3xl sm:text-5xl mt-5 text-center font-bold text-primary">
@@ -41,7 +41,7 @@ export default function About() {
           </div>
           <div>
             <div className="w-full md:w-4/5 h-auto px-8 py-4 sm:p-8 flex flex-col sm:flex-row justify-center items-center">
-              <div className="w-4/5 sm:w-1/2 h-auto object-cover overflow-hidden">
+              <div className="w-3/5 sm:w-1/2 h-auto object-cover overflow-hidden">
                 <img
                   src="/images/heads.jpg"
                   alt="Image 2"
@@ -85,7 +85,7 @@ export default function About() {
                 concepts by various means.
               </p>
             </div>
-            <div className="w-4/5 sm:w-1/2 h-auto object-cover overflow-hidden">
+            <div className="w-3/5 sm:w-1/2 h-auto object-cover overflow-hidden">
               <img
                 src="/images/fullteam.jpg"
                 alt="Image 1"

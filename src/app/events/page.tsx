@@ -33,7 +33,7 @@ const Events = () => {
     <div className="w-screen min-h-screen">
       <DotBackground />
       <div className="flex justify-center">
-        <div className=" lg:w-[900px] ">
+        <div className=" md:w-[700px] lg:w-[900px] ">
           <div className=" py-8 px-4">
             <div>
               <p className="text-3xl sm:text-5xl mb-5 mt-12 font-bold text-primary text-center">

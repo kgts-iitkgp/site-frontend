@@ -15,7 +15,7 @@ type BlogCardProps = {
 
 export const BlogCard: React.FC<BlogCardProps> = ({ id, title, author, date, words, content, image, link }) => {
   return (
-      <div className="relative cursor-default bg-black max-w-[300px] bg-cardbg shadow-md overflow-hidden transform transition-all duration-300 border-2 border-primary w-full mx-auto rounded-2xl hover:-translate-y-2 h-full flex flex-col justify-center">
+      <div className="relative cursor-default bg-black w-[300px] bg-cardbg shadow-md overflow-hidden transform transition-all duration-300 border-2 border-primary mx-auto rounded-2xl hover:-translate-y-2 h-full flex flex-col justify-center">
         <div className="p-3 bg-cardbg overflow-hidden">
           <Image
             src={`${image}`}

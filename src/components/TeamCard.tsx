@@ -6,11 +6,11 @@ import { FaInstagram } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
 
 type BlogCardProps = {
-  id: string;
+  id: number;
   name: string;
   designation: string;
   image: string;
-  FBlink: string;
+  FBLink: string;
   InstaLink: string;
   LinkedInLink: string;
 };
@@ -20,7 +20,7 @@ export const TeamCard: React.FC<BlogCardProps> = ({
   name,
   designation,
   image,
-  FBlink,
+  FBLink,
   InstaLink,
   LinkedInLink,
 }) => {

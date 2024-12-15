@@ -12,11 +12,11 @@ export interface Event {
   }
 
 export interface Profile {
-  id: string;
+  id: number;
   name: string;
   designation: string;
   image: string;
-  FBlink: string;
+  FBLink: string;
   InstaLink: string;
   LinkedInLink: string;
 }

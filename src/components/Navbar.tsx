@@ -58,19 +58,19 @@ function Navbar() {
               <Link href={"/"}>Home</Link>
             </div>
             <div className="px-2 hover:bg-primary rounded-md cursor-pointer hover:scale-105 transition ease-in-out duration-200">
-              <Link href={"/blogs"}>Blogs</Link>
+              <Link href={"/about"}>About</Link>
             </div>
             <div className="px-2 hover:bg-primary rounded-md cursor-pointer hover:scale-105 transition ease-in-out duration-200">
               <Link href={"/events"}>Events</Link>
+            </div>
+            <div className="px-2 hover:bg-primary rounded-md cursor-pointer hover:scale-105 transition ease-in-out duration-200">
+              <Link href={"/blogs"}>Blogs</Link>
             </div>
             {/* <div className="px-2 hover:bg-gradient-to-r from-secondary/60 to-primary/60 rounded-md cursor-pointer hover:scale-105 transition ease-in-out duration-200">
               <Link href={"/"}>Resources</Link>
             </div> */}
             <div className="px-2 hover:bg-primary rounded-md cursor-pointer hover:scale-105 transition ease-in-out duration-200">
               <Link href={"/teams"}>Team</Link>
-            </div>
-            <div className="px-2 hover:bg-primary rounded-md cursor-pointer hover:scale-105 transition ease-in-out duration-200">
-              <Link href={"/about"}>About</Link>
             </div>
           </div>
         </div>

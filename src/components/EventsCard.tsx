@@ -1,7 +1,5 @@
 import { Event } from "../data/types";
 import Image from "next/image";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowLeftLong } from "@fortawesome/free-solid-svg-icons";
 import { useRef } from "react";
 import useOnScreen from "../app/hooks/UseOnScreen";
 import { Button } from "./MovingBorder";

@@ -63,7 +63,7 @@ export const Advisors: Profile[] = [
     image: "/images/profiles/tushar.jpg",
     FBLink: "https://www.facebook.com/tushar.suresh.75/",
     InstaLink: "https://www.instagram.com/_snapshot_oo7",
-    LinkedInLink: "",
+    LinkedInLink: "https://www.linkedin.com/in/tushar-kumar-33a932146/",
     MailLink:"mailto:tusharsureshramoo7@gmail.com",
   },
 ];

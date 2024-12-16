@@ -61,7 +61,7 @@ export default function About() {
                 was 15th June 2011 to 14th June 2012. Since then the society
                 has seen tremendous growth over the years and witnessed good
                 response from students and game theory enthusiasts. By the
-                able guidance and vision of it's founder Manoj Gadia, this
+                able guidance and vision of it&apos;s founder Manoj Gadia, this
                 society has grown to become a family with more than 50
                 members.
               </p>
@@ -74,7 +74,7 @@ export default function About() {
                 {" "}
                 The Society was founded with a main motive to promote concepts
                 of <b>Game Theory</b> and <b>Strategic Thinking</b>. Many
-                situations in people's lives make them choose between different
+                situations in people&apos;s lives make them choose between different
                 options and we always intend to optimize our chances and get the
                 best outcome. This is where Game Theory comes into play. The
                 outcomes decided by the situations provoke us to analyze them

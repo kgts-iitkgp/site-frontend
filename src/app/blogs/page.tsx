@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import { BlogCard } from "../../components/BlogCard";
-import Image from "next/image";
 import DotBackground from "@/components/DotBackground";
 
 const BlogPage = () => {

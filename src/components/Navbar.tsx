@@ -19,16 +19,21 @@ function Navbar() {
           <p>Home</p>
         </Link>
         <Link
-          href={"/blogs"}
-          className="relative inline-block before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-0 before:bg-primary  before:transition-all before:duration-300 hover:before:w-full"
-        >
-          <p>Blogs</p>
+          href={"/about"}
+          className="relative inline-block before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-0 before:bg-primary before:transition-all before:duration-300 hover:before:w-full">
+          <p>About</p>
         </Link>
         <Link
           href={"/events"}
           className="relative inline-block before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-0 before:bg-primary  before:transition-all before:duration-300 hover:before:w-full"
         >
           <p>Events</p>
+        </Link>
+        <Link
+          href={"/blogs"}
+          className="relative inline-block before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-0 before:bg-primary  before:transition-all before:duration-300 hover:before:w-full"
+        >
+          <p>Blogs</p>
         </Link>
         {/* <Link
           href={"/"}
@@ -41,12 +46,6 @@ function Navbar() {
           className="relative inline-block before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-0 before:bg-primary  before:transition-all before:duration-300 hover:before:w-full"
         >
           <p>Team</p>
-        </Link>
-        <Link
-          href={"/about"}
-          className="relative inline-block before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-0 before:bg-primary before:transition-all before:duration-300 hover:before:w-full"
-        >
-          <p>About</p>
         </Link>
       </div>
       <div className="sm:hidden ">

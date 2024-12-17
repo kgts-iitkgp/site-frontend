@@ -26,7 +26,6 @@ const Events = () => {
     }
   }, []);
 
-
   const openPopup = (event: Event) => {
     setPopupEvent(event);
   };

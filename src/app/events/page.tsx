@@ -1,5 +1,5 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Event } from "../../data/types";
 import EventCard from "../../components/EventsCard";
 import Popup from "../../components/Popup";
@@ -9,10 +9,9 @@ import { Ongoing } from "../../data/OngoingEvents";
 import DotBackground from "../../components/DotBackground";
 import "../globals.css";
 import React from "react";
-
+import { useEffect } from "react";
 const Events = () => {
   const [popupEvent, setPopupEvent] = useState<Event | null>(null);
-  const [isVisible, setIsVisible] = useState(false);
   const[ongoing, setOngoing]=useState(true);
   const[upcoming, setUpcoming]=useState(false);
   const[past, setPast]=useState(false);
@@ -27,9 +26,6 @@ const Events = () => {
     }
   }, []);
 
-  useEffect(() => {
-    setIsVisible(true);
-  }, []);
 
   const openPopup = (event: Event) => {
     setPopupEvent(event);

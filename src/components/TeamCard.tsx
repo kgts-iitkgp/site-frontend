@@ -18,7 +18,6 @@ type BlogCardProps = {
 };
 
 export const TeamCard: React.FC<BlogCardProps> = ({
-  id,
   name,
   designation,
   image,

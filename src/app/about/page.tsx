@@ -40,57 +40,48 @@ export default function About() {
             </h1>
           </div>
           <div className="w-full md:w-4/5 h-auto px-8 py-4 sm:p-8 flex flex-col sm:flex-row justify-center items-center">
-            <div className="w-3/5 sm:w-1/2 h-auto object-cover overflow-hidden">
-              <img
-                src="/images/heads.jpg"
-                alt="Image 2"
-                className="transition-transform duration-500 ease-in-out transform hover:scale-110 hover:filter hover:grayscale hover:contrast-125"
-              />
-            </div>
-            <div className="w-full sm:w-1/2 h-auto text-base md:text-lg text-left text-white my-6 mx-6">
-              <p className="text-tertiary text-2xl md:text-3xl lg:text-4xl font-bold my-2">
-                Founding
-              </p>
-              <p>
-                {" "}
-                <b>The KGPian Game Theory Society</b> was founded on{" "}
-                <b>19th August 2010</b> by <b>Manoj Gadia</b>. It is a student
-                body which organizes various Game Theory related programs.
-                With a motive of spreading awareness, knowledge and
-                application of Game Theory, first official session of society
-                was 15th June 2011 to 14th June 2012. Since then the society
-                has seen tremendous growth over the years and witnessed good
-                response from students and game theory enthusiasts. By the
-                able guidance and vision of it&apos;s founder Manoj Gadia, this
-                society has grown to become a family with more than 50
-                members.
-              </p>
-            </div>
-          </div>
-          <div className="w-full md:w-4/5 h-auto px-8 py-4 sm:p-8 flex flex-col-reverse sm:flex-row justify-center items-center">
-            <div className="w-full sm:w-1/2 h-auto text-base md:text-lg text-left text-white my-6 mx-6">
-              <p className="text-tertiary text-2xl md:text-3xl lg:text-4xl font-bold my-2">Motive</p>
-              <p>
-                {" "}
-                The Society was founded with a main motive to promote concepts
-                of <b>Game Theory</b> and <b>Strategic Thinking</b>. Many
-                situations in people&apos;s lives make them choose between different
-                options and we always intend to optimize our chances and get the
-                best outcome. This is where Game Theory comes into play. The
-                outcomes decided by the situations provoke us to analyze them
-                statistically and hence choose the optimal solution through
-                various methods and statistics. This society promotes these
-                concepts by various means.
-              </p>
-            </div>
-            <div className="w-3/5 sm:w-1/2 h-auto object-cover overflow-hidden">
-              <img
-                src="/images/fullteam.jpg"
-                alt="Image 1"
-                className="w-full sm:w-1/2 h-auto object-cover transition-transform duration-500 ease-in-out transform hover:scale-110 hover:filter hover:grayscale hover:contrast-125"
-              />
-            </div>
-          </div>
+  <div className="w-full sm:w-[55%] h-auto object-cover overflow-hidden">
+    <img
+      src="/images/heads.jpg"
+      alt="Image 2"
+      className="transition-transform duration-500 ease-in-out transform hover:scale-110 hover:filter hover:grayscale hover:contrast-125"
+    />
+  </div>
+  <div className="w-full sm:w-[45%] h-auto text-base md:text-lg text-left text-white my-6 mx-6">
+    <p className="text-tertiary text-2xl md:text-3xl lg:text-4xl font-bold my-2">Founding</p>
+    <p>
+      <b>The KGPian Game Theory Society</b> was founded on <b>19th August 2010</b> by <b>Manoj Gadia</b>. 
+      It is a student body which organizes various Game Theory related programs. With a motive of 
+      spreading awareness, knowledge and application of Game Theory, first official session of society 
+      was 15th June 2011 to 14th June 2012. Since then the society has seen tremendous growth over 
+      the years and witnessed good response from students and game theory enthusiasts. By the able 
+      guidance and vision of its founder Manoj Gadia, this society has grown to become a family with 
+      more than 50 members.
+    </p>
+  </div>
+</div>
+
+<div className="w-full md:w-4/5 h-auto px-8 py-4 sm:p-8 flex flex-col-reverse sm:flex-row justify-center items-center">
+  <div className="w-full sm:w-[45%] h-auto text-base md:text-lg text-left text-white my-6 mx-6">
+    <p className="text-tertiary text-2xl md:text-3xl lg:text-4xl font-bold my-2">Motive</p>
+    <p>
+      The Society was founded with a main motive to promote concepts of <b>Game Theory</b> and 
+      <b>Strategic Thinking</b>. Many situations in people's lives make them choose between different 
+      options and we always intend to optimize our chances and get the best outcome. This is where 
+      Game Theory comes into play. The outcomes decided by the situations provoke us to analyze 
+      them statistically and hence choose the optimal solution through various methods and 
+      statistics. This society promotes these concepts by various means.
+    </p>
+  </div>
+  <div className="w-full sm:w-[55%] h-auto object-cover overflow-hidden">
+    <img
+      src="/images/fullteam.jpg"
+      alt="Image 1"
+      className="transition-transform duration-500 ease-in-out transform hover:scale-110 hover:filter hover:grayscale hover:contrast-125"
+    />
+  </div>
+</div>
+
         </div>
         <div className="flex flex-col justify-center">
           <div className="text-center mt-20">

@@ -9,22 +9,12 @@ import { Ongoing } from "../../data/OngoingEvents";
 import DotBackground from "../../components/DotBackground";
 import "../globals.css";
 import React from "react";
-import { useEffect } from "react";
+
 const Events = () => {
   const [popupEvent, setPopupEvent] = useState<Event | null>(null);
-  const[ongoing, setOngoing]=useState(true);
-  const[upcoming, setUpcoming]=useState(false);
-  const[past, setPast]=useState(false);
-  
-  useEffect(() => {
-    if (Ongoing.length === 0 && Upcoming.length === 0) {
-      setOngoing(false);
-      setPast(true);
-    } else if (Ongoing.length === 0) {
-      setOngoing(false);
-      setUpcoming(true);
-    }
-  }, []);
+  const [ongoing, setOngoing] = useState(true);
+  const [upcoming, setUpcoming] = useState(false);
+  const [past, setPast] = useState(false);
 
   const openPopup = (event: Event) => {
     setPopupEvent(event);

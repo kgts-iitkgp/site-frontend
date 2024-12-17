@@ -12,23 +12,35 @@ function Teams() {
       <DotBackground />
       <div>
         <div>
-          <p className="text-3xl sm:text-5xl mb-3 mt-20 font-bold text-primary text-center">
+          <p className="text-3xl sm:text-5xl mb-5 mt-20 font-bold text-primary text-center">
             Our Team
           </p>
         </div>
         <div className="mx-4 flex flex-col items-center">
-          <p className="text-3xl mb-4 mt-6 font-bold text-primary text-center">
-            Advisors
+          <p className="text-3xl mb-5 mt-12 font-bold text-primary text-center">
+            President
           </p>
-          <div className="grid grid-cols-1 sm:grid-cols-2  items-stretch gap-6 lg:gap-6 mb-8 mt-4">
+          <div className="grid grid-cols-1 place-items-center items-stretch gap-6 lg:gap-6 my-8">
             {President.map((data, index) => (
               <TeamCard key={index} {...data} />
             ))}
+          </div>
+        </div>
+        <div className="mx-4 flex flex-col items-center">
+          <p className="text-3xl mb-5 mt-12 font-bold text-primary text-center">
+            Vice President
+          </p>
+          <div className="grid grid-cols-1 place-items-center items-stretch gap-6 lg:gap-6 my-8">
             {VicePresident.map((data, index) => (
               <TeamCard key={index} {...data} />
             ))}
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 items-stretch gap-6 lg:gap-6 my-8">
+        </div>
+        <div className="mx-4 flex flex-col items-center">
+          <p className="text-3xl mb-5 mt-12 font-bold text-primary text-center">
+            Advisors
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2  items-stretch gap-6 lg:gap-6 my-8">
             {Advisors.map((data, index) => (
               <TeamCard key={index} {...data} />
             ))}

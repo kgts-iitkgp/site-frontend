@@ -19,7 +19,6 @@ export interface Profile {
   FBLink: string;
   InstaLink: string;
   LinkedInLink: string;
-  MailLink: string;
 }
 
 

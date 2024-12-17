@@ -19,16 +19,21 @@ function Navbar() {
           <p>Home</p>
         </Link>
         <Link
-          href={"/blogs"}
-          className="relative inline-block before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-0 before:bg-primary  before:transition-all before:duration-300 hover:before:w-full"
-        >
-          <p>Blogs</p>
+          href={"/about"}
+          className="relative inline-block before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-0 before:bg-primary before:transition-all before:duration-300 hover:before:w-full">
+          <p>About</p>
         </Link>
         <Link
           href={"/events"}
           className="relative inline-block before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-0 before:bg-primary  before:transition-all before:duration-300 hover:before:w-full"
         >
           <p>Events</p>
+        </Link>
+        <Link
+          href={"/blogs"}
+          className="relative inline-block before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-0 before:bg-primary  before:transition-all before:duration-300 hover:before:w-full"
+        >
+          <p>Blogs</p>
         </Link>
         {/* <Link
           href={"/"}
@@ -42,12 +47,6 @@ function Navbar() {
         >
           <p>Team</p>
         </Link>
-        <Link
-          href={"/about"}
-          className="relative inline-block before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-0 before:bg-primary before:transition-all before:duration-300 hover:before:w-full"
-        >
-          <p>About</p>
-        </Link>
       </div>
       <div className="sm:hidden ">
         <div className="group flex flex-col items-end">
@@ -59,19 +58,19 @@ function Navbar() {
               <Link href={"/"}>Home</Link>
             </div>
             <div className="px-2 hover:bg-primary rounded-md cursor-pointer hover:scale-105 transition ease-in-out duration-200">
-              <Link href={"/blogs"}>Blogs</Link>
+              <Link href={"/about"}>About</Link>
             </div>
             <div className="px-2 hover:bg-primary rounded-md cursor-pointer hover:scale-105 transition ease-in-out duration-200">
               <Link href={"/events"}>Events</Link>
+            </div>
+            <div className="px-2 hover:bg-primary rounded-md cursor-pointer hover:scale-105 transition ease-in-out duration-200">
+              <Link href={"/blogs"}>Blogs</Link>
             </div>
             {/* <div className="px-2 hover:bg-gradient-to-r from-secondary/60 to-primary/60 rounded-md cursor-pointer hover:scale-105 transition ease-in-out duration-200">
               <Link href={"/"}>Resources</Link>
             </div> */}
             <div className="px-2 hover:bg-primary rounded-md cursor-pointer hover:scale-105 transition ease-in-out duration-200">
               <Link href={"/teams"}>Team</Link>
-            </div>
-            <div className="px-2 hover:bg-primary rounded-md cursor-pointer hover:scale-105 transition ease-in-out duration-200">
-              <Link href={"/about"}>About</Link>
             </div>
           </div>
         </div>

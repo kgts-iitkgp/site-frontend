@@ -40,48 +40,58 @@ export default function About() {
             </h1>
           </div>
           <div className="w-full md:w-4/5 h-auto px-8 py-4 sm:p-8 flex flex-col sm:flex-row justify-center items-center">
-  <div className="w-full sm:w-[50%] h-auto object-cover overflow-hidden">
-    <img
-      src="/images/manojgadia.jpeg"
-      alt="Image 2"
-      className="transition-transform duration-500 ease-in-out transform hover:scale-110 hover:filter hover:grayscale hover:contrast-125"
-    />
-  </div>
-  <div className="w-full sm:w-[45%] h-auto text-base md:text-lg text-left text-white my-6 mx-6">
-    <p className="text-tertiary text-2xl md:text-3xl lg:text-4xl font-bold my-2">Founding</p>
-    <p>
-      <b>The KGPian Game Theory Society</b> was founded on <b>19th August 2010</b> by <b>Mr. Manoj Gadia</b>. 
-      It is a student body which organizes various Game Theory related programs. With a motive of 
-      spreading awareness, knowledge and application of Game Theory, first official session of society 
-      was 15th June 2011 to 14th June 2012. Since then the society has seen tremendous growth over 
-      the years and witnessed good response from students and game theory enthusiasts. By the able 
-      guidance and vision of its founder Manoj Gadia, this society has grown to become a family with 
-      more than 50 members.
-    </p>
-  </div>
-</div>
+            <div className="w-full sm:w-[50%] h-auto object-cover overflow-hidden">
+              <img
+                src="/images/manojgadia.jpeg"
+                alt="Image 2"
+                className="transition-transform duration-500 ease-in-out transform hover:scale-110 hover:filter hover:grayscale hover:contrast-125"
+              />
+            </div>
+            <div className="w-full sm:w-[45%] h-auto text-base md:text-lg text-left text-white my-6 mx-6">
+              <p className="text-tertiary text-2xl md:text-3xl lg:text-4xl font-bold my-2">
+                Founding
+              </p>
+              <p>
+                <b>The KGPian Game Theory Society</b> was founded on{" "}
+                <b>19th August 2010</b> by <b>Mr. Manoj Gadia</b>. It is a
+                student body which organizes various Game Theory related
+                programs. With a motive of spreading awareness, knowledge and
+                application of Game Theory, first official session of society
+                was 15th June 2011 to 14th June 2012. Since then the society has
+                seen tremendous growth over the years and witnessed good
+                response from students and game theory enthusiasts. By the able
+                guidance and vision of its founder Manoj Gadia, this society has
+                grown to become a family with more than 50 members.
+              </p>
+            </div>
+          </div>
 
-<div className="w-full md:w-4/5 h-auto px-8 py-4 sm:p-8 flex flex-col-reverse sm:flex-row justify-center items-center">
-  <div className="w-full sm:w-[45%] h-auto text-base md:text-lg text-left text-white my-6 mx-6">
-    <p className="text-tertiary text-2xl md:text-3xl lg:text-4xl font-bold my-2">Motive</p>
-    <p>
-      The Society was founded with a main motive to promote concepts of <b>Game Theory</b> and 
-      <b>Strategic Thinking</b>. Many situations in people's lives make them choose between different 
-      options and we always intend to optimize our chances and get the best outcome. This is where 
-      Game Theory comes into play. The outcomes decided by the situations provoke us to analyze 
-      them statistically and hence choose the optimal solution through various methods and 
-      statistics. This society promotes these concepts by various means.
-    </p>
-  </div>
-  <div className="w-full sm:w-[55%] h-auto object-cover overflow-hidden">
-    <img
-      src="/images/fullteam.jpg"
-      alt="Image 1"
-      className="transition-transform duration-500 ease-in-out transform hover:scale-110 hover:filter hover:grayscale hover:contrast-125"
-    />
-  </div>
-</div>
-
+          <div className="w-full md:w-4/5 h-auto px-8 py-4 sm:p-8 flex flex-col-reverse sm:flex-row justify-center items-center">
+            <div className="w-full sm:w-[45%] h-auto text-base md:text-lg text-left text-white my-6 mx-6">
+              <p className="text-tertiary text-2xl md:text-3xl lg:text-4xl font-bold my-2">
+                Motive
+              </p>
+              <p>
+                The Society was founded with a main motive to promote concepts
+                of <b>Game Theory</b> and
+                <b>Strategic Thinking</b>. Many situations in people's lives
+                make them choose between different options and we always intend
+                to optimize our chances and get the best outcome. This is where
+                Game Theory comes into play. The outcomes decided by the
+                situations provoke us to analyze them statistically and hence
+                choose the optimal solution through various methods and
+                statistics. This society promotes these concepts by various
+                means.
+              </p>
+            </div>
+            <div className="w-full sm:w-[55%] h-auto object-cover overflow-hidden">
+              <img
+                src="/images/fullteam.jpg"
+                alt="Image 1"
+                className="transition-transform duration-500 ease-in-out transform hover:scale-110 hover:filter hover:grayscale hover:contrast-125"
+              />
+            </div>
+          </div>
         </div>
         <div className="flex flex-col justify-center">
           <div className="text-center mt-20">
@@ -89,15 +99,12 @@ export default function About() {
               Our Activities
             </h1>
           </div>
-          <div className="mx-6 flex flex-col justify-center items-center">
-            <div className="flex flex-col sm:flex-row sm:justify-around justify-center items-center">
+          <div className="mx-6 flex flex-col justify-start items-center">
+            <div className="flex w-full flex-col sm:flex-row sm:justify-between justify-center items-center sm:items-start">
               <div className="w-4/5 mt-4 sm:w-[40%] h-auto flex flex-col items-center">
-                <PiStrategyBold
-                  className="text-white w-[80px] h-[80px] sm:w-[100px] sm:h-[100px]"
-                />
-                <p className="text-sm sm:text-base md:text-lg lg:text-xl  text-tertiary my-6 text-center">
-                  <b className="text-white">THE ART OF STRATEGY PROJECT</b>
-                  <br />
+                <PiStrategyBold className="text-white w-[80px] h-[80px] sm:w-[100px] sm:h-[100px]" />
+                <b className="text-white">THE ART OF STRATEGY PROJECT</b>
+                <p className="text-sm sm:text-base md:text-lg lg:text-xl sm:w-[300px] md:w-[370px] lg:w-[480px] text-tertiary mb-6 text-center">
                   This project is started under the advice of Prof. Avinash
                   Dixit, emeritus professor of Princeton University. Society
                   members undergo this self-learning program throughout the year
@@ -105,16 +112,12 @@ export default function About() {
                   makes original questions based on strategic decision-making to
                   compile it as a question bank.
                   <br />
-                  <br />
                 </p>
               </div>
               <div className="w-4/5 mt-4 sm:w-[40%] h-auto flex flex-col items-center">
-                <GoCommentDiscussion
-                  className="text-white w-[80px] h-[80px] sm:w-[100px] sm:h-[100px]"
-                />
-                <p className="text-sm sm:text-base md:text-lg lg:text-xl  text-tertiary my-6 text-center">
-                  <b className="text-white">DISCUSSION SESSIONS</b>
-                  <br />
+                <GoCommentDiscussion className="text-white w-[80px] h-[80px] sm:w-[100px] sm:h-[100px]" />
+                <b className="text-white">DISCUSSION SESSIONS</b>
+                <p className="text-sm sm:text-base md:text-lg lg:text-xl sm:w-[300px] md:w-[370px] lg:w-[480px]  text-tertiary mb-6 text-center">
                   In discussion sessions, senior members conduct discussion
                   sessions for all the members, explaining the various
                   theoretical concepts, along with interesting games and
@@ -123,14 +126,11 @@ export default function About() {
                 </p>
               </div>
             </div>
-            <div className="flex flex-col sm:flex-row sm:justify-around justify-center items-center">
+            <div className="flex w-full flex-col sm:flex-row sm:justify-between justify-center items-center sm:items-start">
               <div className="w-4/5 mt-4 sm:w-[40%] h-auto flex flex-col items-center">
-                <FaBookOpen
-                  className="text-white w-[80px] h-[80px] sm:w-[100px] sm:h-[100px]"
-                />
-                <p className="text-sm sm:text-base md:text-lg lg:text-xl  text-tertiary my-6 text-center">
-                  <b className="text-white">CASE STUDIES</b>
-                  <br />
+                <FaBookOpen className="text-white w-[80px] h-[80px] sm:w-[100px] sm:h-[100px]" />
+                <b className="text-white">CASE STUDIES</b>
+                <p className="text-sm sm:text-base md:text-lg lg:text-xl sm:w-[300px] md:w-[370px] lg:w-[480px]  text-tertiary mb-6 text-center">
                   Society members practice solving case studies using game
                   theory in our academic meetings. Senior members solve real
                   life case studies in the fields of business and economics.
@@ -138,12 +138,9 @@ export default function About() {
                 </p>
               </div>
               <div className="w-4/5 mt-4 sm:w-[40%] h-auto flex flex-col items-center">
-                <FaGamepad
-                  className="text-white w-[80px] h-[80px] sm:w-[100px] sm:h-[100px]"
-                />
-                <p className="text-sm sm:text-base md:text-lg lg:text-xl  text-tertiary my-6 text-center">
-                  <b className="text-white">GAMES</b>
-                  <br />
+                <FaGamepad className="text-white w-[80px] h-[80px] sm:w-[100px] sm:h-[100px]" />
+                <b className="text-white">GAMES</b>
+                <p className="text-sm sm:text-base md:text-lg lg:text-xl sm:w-[300px] md:w-[370px] lg:w-[480px]  text-tertiary mb-6 text-center">
                   In society meetings, members play strategy-based games among
                   themselves to learn how to use game theory concepts in a given
                   situation. The games are usually in accordance with the

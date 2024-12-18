@@ -11,14 +11,14 @@ export default function About() {
   return (
     <div className="min-h-screen">
       <DotBackground />
-      <div className="relative bg-black w-full h-full px-4 sm:pt-28 pb-4 bg-cover bg-center flex justify-center items-center">
+      {/* <div className="relative bg-black w-full h-full px-4 sm:pt-28 pb-4 bg-cover bg-center flex justify-center items-center">
         <img
-          src="/images/fullteam.jpg" // the background image without the dice
+          src="/images/fullteam2.jpg" // the background image without the dice
           alt="full team image"
           className="absolute top-0 left-0 w-full h-full object-cover opacity-80"
         />
         <div className="z-20 flex h-[400px] w-[300px] md:w-[700px] lg:w-[900px] sm:h-[650px] justify-center items-end md:-translate-y-28 lg:-translate-y-20">
-          {/* Text Content */}
+         
           <div className=" text-white flex flex-col justify-center ">
             <p className="text-3xl sm:text-5xl mt-5 text-center lg:text-7xl font-bold text-primary">
               About
@@ -31,7 +31,7 @@ export default function About() {
             </p>
           </div>
         </div>
-      </div>
+      </div> */}
       <div className="w-full flex flex-col items-center">
         <div className="flex flex-col justify-center items-center lg:w-4/5">
           <div className="text-center mt-20">
@@ -40,9 +40,9 @@ export default function About() {
             </h1>
           </div>
           <div className="w-full md:w-4/5 h-auto px-8 py-4 sm:p-8 flex flex-col sm:flex-row justify-center items-center">
-  <div className="w-full sm:w-[55%] h-auto object-cover overflow-hidden">
+  <div className="w-full sm:w-[50%] h-auto object-cover overflow-hidden">
     <img
-      src="/images/heads.jpg"
+      src="/images/manojgadia.jpeg"
       alt="Image 2"
       className="transition-transform duration-500 ease-in-out transform hover:scale-110 hover:filter hover:grayscale hover:contrast-125"
     />
@@ -50,7 +50,7 @@ export default function About() {
   <div className="w-full sm:w-[45%] h-auto text-base md:text-lg text-left text-white my-6 mx-6">
     <p className="text-tertiary text-2xl md:text-3xl lg:text-4xl font-bold my-2">Founding</p>
     <p>
-      <b>The KGPian Game Theory Society</b> was founded on <b>19th August 2010</b> by <b>Manoj Gadia</b>. 
+      <b>The KGPian Game Theory Society</b> was founded on <b>19th August 2010</b> by <b>Mr. Manoj Gadia</b>. 
       It is a student body which organizes various Game Theory related programs. With a motive of 
       spreading awareness, knowledge and application of Game Theory, first official session of society 
       was 15th June 2011 to 14th June 2012. Since then the society has seen tremendous growth over 

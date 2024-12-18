@@ -10,13 +10,13 @@ function Footer() {
     <div className="text-white border-t-[1px] border-slate-200 flex justify-between items-center bg-black/60  w-full p-2">
       <div className="flex flex-col  sm:flex-row justify-around w-full items-center">
         <div className="flex items-center space-x-4 p-2">
-          <div className="rounded-full border-2 border-white p-1">
+          <div className="rounded-full">
             <Image
-              src={"/assets/KGTSlogo.png"}
+              src={"/images/LogoWhite.jpeg"}
               alt="logo"
               height={60}
               width={60}
-              className="w-[30px]"
+              className="w-[45px] rounded-full"
             ></Image>
           </div>
           <div className="flex flex-col items-center justify-start space-y-2">

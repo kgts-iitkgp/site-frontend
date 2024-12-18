@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import Logo from "../../public/images/KGTSlogo.png";
+import Logo from "../../public/images/LogoWhite.jpeg";
 import Link from "next/link";
 import { RxHamburgerMenu } from "react-icons/rx";
 import Menu from "./Menu";
@@ -12,8 +12,8 @@ function Navbar() {
   return (
     <div className="text-white px-10 py-2 border-b-[1px] border-slate-200 flex justify-between items-center bg-black/60 fixed z-50 top-0 w-full">
       <Link href={"/"}>
-        <div className="rounded-full border-2 border-white p-1">
-          <Image src={Logo} height={35} alt="logo"></Image>
+        <div className="rounded-full">
+          <Image className="rounded-full" src={Logo} height={40} alt="logo"></Image>
         </div>
       </Link>
       <div className="hidden sm:flex space-x-10 text-lg">

@@ -62,7 +62,7 @@ function Navbar() {
           >
             <RxHamburgerMenu />
           </p>
-          <div className="translate-x-[230px] group-hover:translate-x-[42px] transition-all duration-200">
+          <div className="translate-x-[230px] group-hover:translate-x-[42px] transition-all duration-300">
             <Menu />
           </div>
         </div>

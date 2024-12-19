@@ -57,7 +57,7 @@ function Navbar() {
       <div className="sm:hidden ">
         <div className="group">
           <p
-            className="text-3xl group-hover:rotate-180 transition-all duration-300 border-2 border-secondary rounded-md px-1 "
+            className="text-2xl group-hover:rotate-180 transition-all duration-300 rounded-md px-1 "
             onClick={() => setMenu(!isMenu)}
           >
             <RxHamburgerMenu />

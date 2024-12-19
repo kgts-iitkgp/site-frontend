@@ -174,7 +174,7 @@ export const Heads: Profile[] = [
     id: 19,
     name: "Suchismita Sahoo",
     designation: "Design and Media Head",
-    image: "/images/profiles/noimage.png",
+    image: "/images/profiles/suchismita.jpg",
     FBLink: "https://www.facebook.com/profile.php?id=61550090230775",
     InstaLink: "NA",
     LinkedInLink: "https://linkedin.com/in/suchismita-s-5282072ab/",

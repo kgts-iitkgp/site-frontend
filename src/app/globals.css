@@ -22,7 +22,6 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  overflow: hidden;
 }
 
 @layer utilities {

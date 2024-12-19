@@ -40,7 +40,7 @@ export default function About() {
             </h1>
           </div>
           <div className="w-full md:w-4/5 h-auto px-8 py-4 sm:p-8 flex flex-col sm:flex-row justify-center items-center">
-            <div className="w-full sm:w-[50%] h-auto object-cover overflow-hidden">
+            <div className="w-full sm:w-[50%] h-auto flex justify-center object-cover overflow-hidden">
               <img
                 src="/images/manojgadia.jpeg"
                 alt="Image 2"

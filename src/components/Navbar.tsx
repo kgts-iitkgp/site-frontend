@@ -13,7 +13,7 @@ function Navbar() {
     <div className="text-white px-10 py-2 border-b-[1px] border-slate-200 flex justify-between items-center bg-black/60 fixed z-50 top-0 w-full">
       <Link href={"/"}>
         <div className="rounded-full">
-          <Image className="rounded-full" src={Logo} height={40} alt="logo"></Image>
+          <Image className="rounded-full" src={Logo} height={30} alt="logo"></Image>
         </div>
       </Link>
       <div className="hidden sm:flex space-x-10 text-lg">

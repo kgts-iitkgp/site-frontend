@@ -6,25 +6,25 @@ function Menu() {
       <div className="flex flex-col p-4 gap-y-2">
         <Link href={"/"}>
           <div className="px-2 hover:bg-primary rounded-md cursor-pointer hover:scale-105 transition ease-in-out duration-200">
-            <a>Home</a>
+            <p>Home</p>
           </div>
         </Link>
         <p className="w-[98%] h-[1px] bg-slate-300"></p>
         <Link href={"/about"}>
           <div className="px-2 hover:bg-primary rounded-md cursor-pointer hover:scale-105 transition ease-in-out duration-200">
-            <a>About</a>
+            <p>About</p>
           </div>
         </Link>
         <p className="w-[98%] h-[1px] bg-slate-300"></p>
         <Link href={"/events"}>
           <div className="px-2 hover:bg-primary rounded-md cursor-pointer hover:scale-105 transition ease-in-out duration-200">
-            <a>Events</a>
+            <p>Events</p>
           </div>
         </Link>
         <p className="w-[98%] h-[1px] bg-slate-300"></p>
         <Link href={"/blogs"}>
           <div className="px-2 hover:bg-primary rounded-md cursor-pointer hover:scale-105 transition ease-in-out duration-200">
-            <a>Blogs</a>
+            <p>Blogs</p>
           </div>
         </Link>
         <p className="w-[98%] h-[1px] bg-slate-300"></p>
@@ -34,7 +34,7 @@ function Menu() {
         <p className="w-[98%] h-[1px] bg-slate-300"></p> */}
         <Link href={"/teams"}>
           <div className="px-2 hover:bg-primary rounded-md cursor-pointer hover:scale-105 transition ease-in-out duration-200">
-            <a>Team</a>
+            <p>Team</p>
           </div>
         </Link>
         <p className="w-[98%] h-[1px] bg-slate-300"></p>

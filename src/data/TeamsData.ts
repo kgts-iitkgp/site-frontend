@@ -28,13 +28,13 @@ export const VicePresident: Profile[] = [
 export const Advisors: Profile[] = [
   {
     id: 3,
-    name: "Mathew Manoj",
+    name: "Anumothu Ankit",
     designation: "Advisor",
-    image: "/images/profiles/manoj.jpg",
-    FBLink: "https://www.facebook.com/mathew.manoj.16",
-    InstaLink: "NA",
-    LinkedInLink: "https://www.linkedin.com/in/mathew-manoj/",
-    MailLink:"mailto:mathewmanoj13@gmail.com",
+    image: "/images/profiles/ankit.jpg",
+    FBLink: "https://www.facebook.com/profile.php?id=100005524995656",
+    InstaLink: "https://www.instagram.com/ankit_anumothu/",
+    LinkedInLink: "https://www.linkedin.com/in/ankit-anumothu-4a4344226/",
+    MailLink:"mailto:ankitanumothu@gmail.com",
   },
   {
     id: 4,
@@ -48,13 +48,13 @@ export const Advisors: Profile[] = [
   },
   {
     id: 5,
-    name: "Anumothu Ankit",
+    name: "Mathew Manoj",
     designation: "Advisor",
-    image: "/images/profiles/ankit.jpg",
-    FBLink: "https://www.facebook.com/profile.php?id=100005524995656",
-    InstaLink: "https://www.instagram.com/ankit_anumothu/",
-    LinkedInLink: "https://www.linkedin.com/in/ankit-anumothu-4a4344226/",
-    MailLink:"mailto:ankitanumothu@gmail.com",
+    image: "/images/profiles/manoj.jpg",
+    FBLink: "https://www.facebook.com/mathew.manoj.16",
+    InstaLink: "NA",
+    LinkedInLink: "https://www.linkedin.com/in/mathew-manoj/",
+    MailLink:"mailto:mathewmanoj13@gmail.com",
   },
   {
     id: 6,
@@ -71,16 +71,6 @@ export const Advisors: Profile[] = [
 export const Heads: Profile[] = [
   {
     id: 8,
-    name: "Pranav Senthilkumar",
-    designation: "General Secretary",
-    image: "/images/profiles/pranav.png",
-    FBLink: "https://www.facebook.com/profile.php?id=100041830773249",
-    InstaLink: "https://www.instagram.com/pranavsenthil2005/",
-    LinkedInLink: "",
-    MailLink:"mailto:pranavsenthil2005@gmail.com",
-  },
-  {
-    id: 9,
     name: "Ayush Mundada",
     designation: "General Secretary",
     image: "/images/profiles/ayush.jpg",
@@ -88,6 +78,16 @@ export const Heads: Profile[] = [
     InstaLink: "https://www.instagram.com/ayushmundada57/",
     LinkedInLink: "https://www.linkedin.com/in/ayush-mundada-375596256/",
     MailLink:"mailto:Ayush.mundada2004@gmail.com",
+  },
+  {
+    id: 9,
+    name: "Pranav Senthilkumar",
+    designation: "General Secretary",
+    image: "/images/profiles/pranav.png",
+    FBLink: "https://www.facebook.com/profile.php?id=100041830773249",
+    InstaLink: "https://www.instagram.com/pranavsenthil2005/",
+    LinkedInLink: "",
+    MailLink:"mailto:pranavsenthil2005@gmail.com",
   },
   {
     id: 11,

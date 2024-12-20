@@ -74,7 +74,7 @@ export default function About() {
               <p>
                 The Society was founded with a main motive to promote concepts
                 of <b>Game Theory</b> and
-                <b>Strategic Thinking</b>. Many situations in people's lives
+                <b>Strategic Thinking</b>. Many situations in people&apos;s lives
                 make them choose between different options and we always intend
                 to optimize our chances and get the best outcome. This is where
                 Game Theory comes into play. The outcomes decided by the

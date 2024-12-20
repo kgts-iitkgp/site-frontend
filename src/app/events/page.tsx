@@ -35,7 +35,7 @@ const Events = () => {
   };
 
   return (
-    <div className="w-screen min-h-screen">
+    <div className="w-full min-h-screen">
       <DotBackground />
       <div className="flex justify-center">
         <div className=" md:w-[700px] lg:w-[900px] ">

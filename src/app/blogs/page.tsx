@@ -7,6 +7,16 @@ const BlogPage = () => {
   const blogs = [
     {
       id: "1",
+      title: "Game Theory in Traffic Network",
+      author: "Medium Article",
+      date: "December 20, 2024",
+      words: 80,
+      content:"Game theory in traffic networks highlights a delicate balance: when individual drivers optimize their routes, the system may suffer, but with collective strategy, the road to efficiency becomes clearer.",
+      image: "https://img.freepik.com/free-photo/round-point_181624-32243.jpg?t=st=1734684045~exp=1734687645~hmac=d25ac3016c5e2718c0273810129a22e36801283e484a3df4b519b8808120a120&w=740",
+      link: "https://medium.com/@kgtsiitkgp/game-theory-in-traffic-network-73faa1703fe2",
+    },
+    {
+      id: "2",
       title: "Game Theory in Taxation",
       author: "Medium Article",
       date: "December 12, 2024",
@@ -18,7 +28,7 @@ const BlogPage = () => {
       link: "https://medium.com/@kgtsiitkgp/game-theory-in-taxation-eab50bc3fae7",
     },
     {
-      id: "2",
+      id: "3",
       title: "Behavioral Game Theory",
       author: "Medium Article",
       date: "October 11, 2024",
@@ -30,7 +40,7 @@ const BlogPage = () => {
       link: "https://medium.com/@kgtsiitkgp/behavioral-game-theory-071b3a78b67e",
     },
     {
-      id: "3",
+      id: "4",
       title: "Expanding Beyond Nash Equilibrium",
       author: "Medium Article",
       date: "September 8, 2024",
@@ -42,7 +52,7 @@ const BlogPage = () => {
       link: "https://medium.com/@kgtsiitkgp/expanding-beyond-nash-equilibrium-fc1f2c08a695",
     },
     {
-      id: "4",
+      id: "5",
       title: "Ethical Considerations in Game Theory",
       author: "Medium Article",
       date: "August 23, 2024",
@@ -53,7 +63,7 @@ const BlogPage = () => {
       link: "https://medium.com/@kgtsiitkgp/ethical-considerations-in-game-theory-and-strategic-decision-making-0d434a76a66e",
     },
     {
-      id: "5",
+      id: "6",
       title: "Game Theory in Sports",
       author: "Medium Article",
       date: "July 13, 2024",
@@ -65,7 +75,7 @@ const BlogPage = () => {
       link: "https://medium.com/@kgtsiitkgp/game-theory-in-sports-analyzing-competitive-strategies-and-player-interactions-a2966d50acc3",
     },
     {
-      id: "6",
+      id: "7",
       title: "The Delusional Fairness of Voting Systems",
       author: "Medium Article",
       date: "June 3, 2024",

@@ -22,7 +22,6 @@ export const TeamCard: React.FC<BlogCardProps> = ({
   designation,
   image,
   FBLink,
-  InstaLink,
   LinkedInLink,
   MailLink,
 }) => {

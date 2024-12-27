@@ -22,8 +22,8 @@ function Navbar() {
             ></Image>
           </div>
         </Link>
-        <p className="hidden lg:block text-xl">The KGPian Game Theory Society, IIT Kharagpur</p>
-        <p className="lg:hidden">KGTS, IIT KGP</p>
+        <p className="hidden xl:block text-xl">The KGPian Game Theory Society, IIT Kharagpur</p>
+        <p className="md:text-xl xl:hidden">KGTS, IIT KGP</p>
       </div>
       <div className="hidden md:flex space-x-10 text-lg">
         <Link

@@ -39,7 +39,7 @@ export const BlogCard: React.FC<BlogCardProps> = ({ title, author, date, words, 
         </div>
         <Link href={`${link}`}>
           <div className="relative w-full flex flex-col justify-end z-10 h-10 my-2">
-            <button className="px-5 py-2 hover:bg-tertiary rounded-full border-2 border-primary text-white focus:outline-none transition-all duration-300 self-center">
+            <button className="px-5 py-2 hover:bg-primary rounded-full border-2 border-primary text-white focus:outline-none transition-all duration-300 self-center">
               Read more
             </button>
           </div>

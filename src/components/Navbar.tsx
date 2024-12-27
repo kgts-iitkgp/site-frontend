@@ -10,7 +10,7 @@ import { useState } from "react";
 function Navbar() {
   const [isMenu, setMenu] = useState(false);
   return (
-    <div className="text-white px-10 py-2 border-b-[1px] border-slate-200 flex justify-between items-center bg-black/60 fixed z-50 top-0 w-full">
+    <div className="text-white px-10 py-3 border-b-[1px] border-slate-200 flex justify-between items-center bg-black/60 fixed z-50 top-0 w-full">
       <Link href={"/"}>
         <div className="rounded-full">
           <Image

@@ -58,6 +58,12 @@ function Navbar() {
         >
           <p>Team</p>
         </Link>
+        <Link
+          href={"/contact"}
+          className="relative inline-block before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-0 before:bg-primary  before:transition-all before:duration-300 hover:before:w-full"
+        >
+          <p>Contact Us</p>
+        </Link>
       </div>
       <div className="sm:hidden ">
         <div className="group">

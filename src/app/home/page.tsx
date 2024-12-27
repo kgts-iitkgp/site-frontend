@@ -71,9 +71,9 @@ function HomePage() {
         </div>
       </div>
       {/* Statistics */}
-      <div className="flex flex-col sm:flex-row items-center justify-evenly sm:justify-evenly p-3 sm:mb-10">
-        <div className="my-2 flex flex-col sm:flex-row sm:space-x-3 items-center">
-          <p className="sm:mt-20 md:mt-0 text-3xl sm:text-2xl md:text-5xl font-bold text-primary">
+      <div className="flex flex-row items-center justify-evenly sm:justify-evenly p-3 sm:mb-10">
+        <div className="my-2 flex flex-col md:flex-row sm:space-x-3 items-center">
+          <p className="text-xl sm:text-2xl md:text-5xl font-bold text-primary">
             <CountUp
               end={5}
               enableScrollSpy={true}
@@ -83,8 +83,8 @@ function HomePage() {
           </p>
           <p className="text-white font-bold text-xl sm:text-2xl">Articles</p>
         </div>
-        <div className="my-2 flex flex-col sm:flex-row sm:space-x-3 items-center">
-          <p className="sm:mt-20 md:mt-0 text-3xl sm:text-2xl md:text-5xl font-bold text-primary">
+        <div className="my-2 flex flex-col md:flex-row sm:space-x-3 items-center">
+          <p className="text-xl sm:text-2xl md:text-5xl font-bold text-primary">
             <CountUp
               end={5}
               enableScrollSpy={true}
@@ -94,16 +94,16 @@ function HomePage() {
           </p>
           <p className="text-white font-bold text-xl sm:text-2xl">Events</p>
         </div>
-        <div className="my-2 flex flex-col sm:flex-row sm:space-x-3 items-center">
-          <p className="sm:mt-20 md:mt-0 text-3xl sm:text-2xl md:text-5xl font-bold text-primary">
+        <div className="my-2 flex flex-col md:flex-row sm:space-x-3 items-center">
+          <p className="text-xl sm:text-2xl md:text-5xl font-bold text-primary">
             <CountUp
-              end={10}
+              end={1000}
               enableScrollSpy={true}
               useIndianSeparators={true}
             />
             +
           </p>
-          <p className="text-white font-bold text-xl sm:text-2xl">Riddles</p>
+          <p className="text-white font-bold text-xl sm:text-2xl">Participants</p>
         </div>
       </div>
 

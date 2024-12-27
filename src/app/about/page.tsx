@@ -100,7 +100,7 @@ export default function About() {
             </h1>
           </div>
           <div className="mx-6 flex flex-col justify-start items-center">
-            <div className="flex w-full flex-col sm:flex-row sm:justify-between justify-center items-center sm:items-start">
+            <div className="flex w-full flex-col justify-center sm:flex-row sm:justify-between lg:gap-x-7 items-center sm:items-start">
               <div className="w-4/5 mt-4 sm:w-[40%] h-auto flex flex-col items-center">
                 <PiStrategyBold className="text-white w-[80px] h-[80px] sm:w-[100px] sm:h-[100px]" />
                 <b className="text-white">THE ART OF STRATEGY PROJECT</b>
@@ -126,7 +126,7 @@ export default function About() {
                 </p>
               </div>
             </div>
-            <div className="flex w-full flex-col sm:flex-row sm:justify-between justify-center items-center sm:items-start">
+            <div className="flex w-full flex-col justify-center sm:flex-row sm:justify-between lg:gap-x-7 items-center sm:items-start">
               <div className="w-4/5 mt-4 sm:w-[40%] h-auto flex flex-col items-center">
                 <FaBookOpen className="text-white w-[80px] h-[80px] sm:w-[100px] sm:h-[100px]" />
                 <b className="text-white">CASE STUDIES</b>

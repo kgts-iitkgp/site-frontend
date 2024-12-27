@@ -10,13 +10,13 @@ import { useState } from "react";
 function Navbar() {
   const [isMenu, setMenu] = useState(false);
   return (
-    <div className="text-white px-10 py-2 border-b-[1px] border-slate-200 flex justify-between items-center bg-black/60 fixed z-50 top-0 w-full">
+    <div className="text-white px-10 py-3 border-b-[1px] border-slate-200 flex justify-between items-center bg-black/60 fixed z-50 top-0 w-full">
       <Link href={"/"}>
         <div className="rounded-full">
           <Image
             className="rounded-full"
             src={Logo}
-            height={30}
+            height={40}
             alt="logo"
           ></Image>
         </div>
@@ -44,7 +44,7 @@ function Navbar() {
           href={"/blogs"}
           className="relative inline-block before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-0 before:bg-primary  before:transition-all before:duration-300 hover:before:w-full"
         >
-          <p>Blogs</p>
+          <p>Blog</p>
         </Link>
         {/* <Link
           href={"/"}

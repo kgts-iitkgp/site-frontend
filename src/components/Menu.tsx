@@ -24,7 +24,7 @@ function Menu() {
         <p className="w-[98%] h-[1px] bg-slate-300"></p>
         <Link href={"/blogs"}>
           <div className="px-2 hover:bg-primary rounded-md cursor-pointer hover:scale-105 transition ease-in-out duration-200">
-            <p>Blogs</p>
+            <p>Blog</p>
           </div>
         </Link>
         <p className="w-[98%] h-[1px] bg-slate-300"></p>

@@ -16,12 +16,13 @@ const Contact = (e: React.ChangeEvent<HTMLInputElement>) => {
           </p>
         </div>
         <form
-          className="bg-black/90 w-[900px] flex flex-col gap-y-5 items-center p-4 rounded-lg border-2 border-primary"
+          className="bg-black/90 w-[300px] sm:w-[600px] md:w-[730px] lg:w-[900px] flex flex-col gap-y-5 items-center p-4 rounded-lg border-2 border-primary"
           onSubmit={() => {}}
         >
           <input
             type="text"
             id="user-name"
+            value={name}
             onChange={(e) => {
               setName(e.target.value);
             }}
@@ -41,11 +42,12 @@ const Contact = (e: React.ChangeEvent<HTMLInputElement>) => {
             id="user-feedback"
             placeholder="feedback...."
             rows={5}
+            value={feedback}
             onChange={(e) => setFeedback(e.target.value)}
             className="w-[90%] p-2 mt-5 text-base rounded-lg bg-slate-900/30 outline-none border transition-colors duration-500 border-primary/30 focus:border-primary"
           ></textarea>
           <div className="w-[90%] flex justify-center sm:justify-end">
-            <button className="text-white transition-all duration-300 hover:scale-105 active:scale-95 bg-primary px-4 py-1 text-xl rounded-md" type="submit">Send</button>
+            <button className="text-white transition-all duration-200 hover:scale-105 active:scale-95 bg-primary px-4 py-1 text-xl rounded-md" type="submit">Send</button>
           </div>
         </form>
       </div>

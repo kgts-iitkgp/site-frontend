@@ -26,17 +26,17 @@ export const TeamCard: React.FC<BlogCardProps> = ({
   MailLink,
 }) => {
   return (
-    <div className="relative cursor-default bg-black w-[250px] h-[400px] bg-cardbg shadow-md overflow-hidden transform transition-all duration-400 border-2 border-primary mx-auto rounded-2xl hover:-translate-y-2 flex flex-col justify-center">
-      <div className="p-3 bg-cardbg overflow-hidden h-[300px]">
+    <div className="relative cursor-default bg-black w-[250px] h-[410px] bg-cardbg shadow-md overflow-hidden transform transition-all duration-400 border-2 border-primary mx-auto rounded-2xl hover:-translate-y-2 flex flex-col justify-center">
+      <div className="p-3 bg-cardbg overflow-hidden h-[320px]">
         <Image
           src={`${image}`}
           alt={name}
           width={400}
-          height={700}
+          height={350}
           className="w-full h-full object-cover rounded"
         />
       </div>
-      <div className="p-3">
+      <div className="p-3 h-[110px] flex flex-col items-center justify-center">
         <p className="text-center text-xl text-primary font-bold">{name}</p>
         <p className="text-center text-lg text-tertiary font-bold">{designation}</p>
       </div>

@@ -133,7 +133,7 @@ export const Heads: Profile[] = [
   {
     id: 15,
     name: "Atulraj Sinha",
-    designation: "Publicity and Spons Head",
+    designation: "Publicity and Sponsorship Head",
     image: "/images/profiles/atul.png",
     FBLink: "https://www.facebook.com/profile.php?id=100086993447576",
     InstaLink: "https://www.instagram.com/atulsinha_15/",

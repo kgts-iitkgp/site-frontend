@@ -16,8 +16,8 @@ const Contact = (e: React.ChangeEvent<HTMLInputElement>) => {
             Contact Us
           </p>
         </div>
-        <div className="flex flex-col items-center md:flex-row justify-evenly gap-y-5">
-          <div className="w-4/5 md:w-[45%] m-2">
+        <div className="flex flex-col items-center md:flex-row justify-evenly bg-black/90 border-2 border-primary rounded-lg">
+          <div className="w-4/5 md:w-[45%] m-4">
             <Link target="_blank" href="https://maps.app.goo.gl/3fmbZUXGXCgXfezu7">
               <img
                 src="/images/IITKGP.png"
@@ -26,8 +26,9 @@ const Contact = (e: React.ChangeEvent<HTMLInputElement>) => {
               />
             </Link>
           </div>
+          <div className="h-[90%] w-[1px] rounded-full bg-gray-500"></div>
           <form
-            className="bg-black/90 w-full m-2 md:w-[45%] flex flex-col gap-y-5 items-center p-4 rounded-lg border-2 border-primary"
+            className="bg-black/90 w-full mx-2 my-3 md:w-[45%] flex flex-col gap-y-5 items-center p-4"
             onSubmit={() => {}}
           >
             <input
@@ -38,7 +39,7 @@ const Contact = (e: React.ChangeEvent<HTMLInputElement>) => {
                 setName(e.target.value);
               }}
               placeholder="Name"
-              className="px-2 py-1 w-[90%] bg-transparent text-xl outline-none border-b transition-colors duration-500 border-primary/30 focus:border-primary"
+              className="px-2 py-1 w-[90%] bg-transparent text-xl outline-none border-b-2 transition-colors duration-500 border-gray-500/30 focus:border-gray-500"
             />
             <input
               type="email"
@@ -46,16 +47,16 @@ const Contact = (e: React.ChangeEvent<HTMLInputElement>) => {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               placeholder="Email"
-              className="px-2 py-1 w-[90%] bg-transparent text-xl outline-none border-b transition-colors duration-500 border-primary/30 focus:border-primary"
+              className="px-2 py-1 w-[90%] bg-transparent text-xl outline-none border-b-2 transition-colors duration-500 border-gray-500/30 focus:border-gray-500"
             />
             <textarea
               name="feedback"
               id="user-feedback"
-              placeholder="feedback...."
+              placeholder="Message"
               rows={5}
               value={feedback}
               onChange={(e) => setFeedback(e.target.value)}
-              className="w-[90%] p-2 mt-5 text-base rounded-lg bg-slate-900/30 outline-none border transition-colors duration-500 border-primary/30 focus:border-primary"
+              className="w-[90%] p-2 mt-2 text-base rounded-lg bg-slate-900/30 outline-none border transition-colors duration-500 border-gray-500/30 focus:border-gray-500"
             ></textarea>
             <div className="w-[90%] flex justify-center sm:justify-end">
               <button

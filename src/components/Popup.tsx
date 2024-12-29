@@ -18,11 +18,6 @@ const Popup: React.FC<PopupProps> = ({ event, closePopup }) => {
         <p className='mt-5 text-white sm:text-lg text-sm'>{event.description}</p>
         <p className='uppercase font-bold mt-4 mb-4 text-tertiary text-xl'>Gallery</p>
         {event.images && <Carousel items={event.images}/>}
-        {/* <div className="mt-4 grid grid-cols-3 gap-4">
-          {event.images && event.images.map((images,index)=>(
-            <Image src={images} alt={`${event.title} image ${index + 1}`}  key={index} className="w-full h-full object-cover" />
-          ))}
-        </div> */}
       </div>
     </div>
   );

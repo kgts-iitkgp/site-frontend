@@ -2,7 +2,7 @@ import Link from "next/link";
 
 function Menu() {
   return (
-    <div className="absolute right-0 h-screen bg-black/80 z-50 w-[200px]">
+    <div className="absolute right-0 h-screen bg-black/80 z-30 w-[200px]">
       <div className="flex flex-col p-4 gap-y-2">
         <Link href={"/"}>
           <div className="px-2 hover:bg-primary rounded-md cursor-pointer hover:scale-105 transition ease-in-out duration-200">

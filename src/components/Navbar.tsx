@@ -4,13 +4,14 @@ import Image from "next/image";
 import Logo from "../../public/images/LogoWhite.jpeg";
 import Link from "next/link";
 import { RxHamburgerMenu } from "react-icons/rx";
+import { MdOutlineCancel } from "react-icons/md";
 import Menu from "./Menu";
 import { useState } from "react";
 
-function Navbar() {
+function Navbar(){
   const [isMenu, setMenu] = useState(false);
   return (
-    <div className="text-white px-10 py-3 border-b-[1px] border-slate-200 flex justify-between items-center bg-black/60 fixed z-50 top-0 w-full">
+    <div className="text-white px-10 py-3 border-b-[1px] border-slate-200 flex justify-between items-center bg-black/80 fixed z-50 top-0 w-full">
       <div className="flex items-center gap-x-4">
         <Link href={"/"}>
           <div className="rounded-full">
@@ -72,12 +73,14 @@ function Navbar() {
       <div className="md:hidden ">
         <div className="group">
           <p
-            className="text-2xl group-hover:rotate-180 transition-all duration-300 rounded-md px-1 "
-            onClick={() => setMenu(!isMenu)}
+            className="text-2xl hover:scale-105 active:scale-95 transition-all duration-300 rounded-md px-1 "
+            onClick={(e) => {e.stopPropagation(); setMenu(!isMenu)}}
           >
-            <RxHamburgerMenu />
+            {!isMenu && <RxHamburgerMenu />}
+            {isMenu && <MdOutlineCancel />}
           </p>
-          <div className="translate-x-[250px] group-hover:translate-x-[42px] transition-all duration-300">
+          <div className={`${isMenu?"translate-x-[42px]":"translate-x-[250px] "} transition-transform
+           duration-300`}>
             <Menu />
           </div>
         </div>

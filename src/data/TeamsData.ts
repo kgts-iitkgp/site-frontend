@@ -68,7 +68,7 @@ export const Advisors: Profile[] = [
   },
 ];
 
-export const Heads: Profile[] = [
+export const GeneralSecretaries: Profile[] = [
   {
     id: 8,
     name: "Ayush Mundada",
@@ -89,6 +89,9 @@ export const Heads: Profile[] = [
     LinkedInLink: "",
     MailLink:"mailto:pranavsenthil2005@gmail.com",
   },
+];
+
+export const AcademicHeads: Profile[] = [
   {
     id: 11,
     name: "Bajrang Mishra",
@@ -109,39 +112,11 @@ export const Heads: Profile[] = [
     LinkedInLink: "https://www.linkedin.com/in/hero4fun07/",
     MailLink:"mailto:studentsubhu@gmail.com",
   },
+];
+
+export const DesignHeads: Profile[] = [
   {
     id: 13,
-    name: "Aditya Jhajhria",
-    designation: "Events Head",
-    image: "/images/profiles/adityaJha.jpg",
-    FBLink: "",
-    InstaLink: "NA",
-    LinkedInLink: "https://www.linkedin.com/in/aditya-jhajhria-167253258/",
-    MailLink:"mailto:jhajhriaaditya17@gmail.com",
-  },
-  {
-    id: 14,
-    name: "Roshan Kumar Yadav",
-    designation: "Events Head",
-    image: "/images/profiles/roshan.png",
-    FBLink:
-      "https://www.facebook.com/profile.php?id=100086362277928&mibextid=ZbWKwL",
-    InstaLink: "https://www.instagram.com/still_roshan/",
-    LinkedInLink: "https://www.linkedin.com/in/stillroshan/",
-    MailLink:"mailto:roshan643yadav@gmail.com",
-  },
-  {
-    id: 15,
-    name: "Atulraj Sinha",
-    designation: "Publicity and Spons Head",
-    image: "/images/profiles/atul.png",
-    FBLink: "https://www.facebook.com/profile.php?id=100086993447576",
-    InstaLink: "https://www.instagram.com/atulsinha_15/",
-    LinkedInLink: "https://www.linkedin.com/in/atul-sinha-448603276/",
-    MailLink:"mailto:atulsinha803115@gmail.com",
-  },
-  {
-    id: 16,
     name: "Manish Lamoria",
     designation: "Design and Media Head",
     image: "/images/profiles/manish.jpg",
@@ -151,7 +126,7 @@ export const Heads: Profile[] = [
     MailLink:"mailto:manlamoria22@gmail.com",
   },
   {
-    id: 17,
+    id: 14,
     name: "Soubhik Kumar Shaw",
     designation: "Design and Media Head",
     image: "/images/profiles/soubhik.jpg",
@@ -161,7 +136,7 @@ export const Heads: Profile[] = [
     MailLink:"mailto:soubhikkr.shaw@gmail.com",
   },
   {
-    id: 18,
+    id: 15,
     name: "Subham Ghosh",
     designation: "Design and Media Head",
     image: "/images/profiles/subham.jpg",
@@ -171,7 +146,7 @@ export const Heads: Profile[] = [
     MailLink:"mailto:subhamghosh9809@gmailcom",
   },
   {
-    id: 19,
+    id: 16,
     name: "Suchismita Sahoo",
     designation: "Design and Media Head",
     image: "/images/profiles/suchismita.jpg",
@@ -180,6 +155,46 @@ export const Heads: Profile[] = [
     LinkedInLink: "https://linkedin.com/in/suchismita-s-5282072ab/",
     MailLink:"mailto:suchi.sm05@gmailcom",
   },
+]
+
+export const EventsHeads: Profile[] = [
+  {
+    id: 17,
+    name: "Aditya Jhajhria",
+    designation: "Events Head",
+    image: "/images/profiles/adityaJha.jpg",
+    FBLink: "",
+    InstaLink: "NA",
+    LinkedInLink: "https://www.linkedin.com/in/aditya-jhajhria-167253258/",
+    MailLink:"mailto:jhajhriaaditya17@gmail.com",
+  },
+  {
+    id: 18,
+    name: "Roshan Kumar Yadav",
+    designation: "Events Head",
+    image: "/images/profiles/roshan.png",
+    FBLink:
+      "https://www.facebook.com/profile.php?id=100086362277928&mibextid=ZbWKwL",
+    InstaLink: "https://www.instagram.com/still_roshan/",
+    LinkedInLink: "https://www.linkedin.com/in/stillroshan/",
+    MailLink:"mailto:roshan643yadav@gmail.com",
+  },
+];
+
+export const PublicityHeads: Profile[] = [
+  {
+    id: 19,
+    name: "Atulraj Sinha",
+    designation: "Publicity and Sponsorship Head",
+    image: "/images/profiles/atul.png",
+    FBLink: "https://www.facebook.com/profile.php?id=100086993447576",
+    InstaLink: "https://www.instagram.com/atulsinha_15/",
+    LinkedInLink: "https://www.linkedin.com/in/atul-sinha-448603276/",
+    MailLink:"mailto:atulsinha803115@gmail.com",
+  },
+]
+
+export const TechHeads: Profile[] = [
   {
     id: 20,
     name: "B Pranesh Vijay",

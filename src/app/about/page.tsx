@@ -36,6 +36,30 @@ export default function About() {
         <div className="flex flex-col justify-center items-center lg:w-4/5">
           <div className="text-center mt-20">
             <h1 className="text-3xl sm:text-5xl mt-5 text-center font-bold text-primary">
+              About KGTS
+            </h1>
+          </div>
+          <div className="w-full md:w-4/5 h-auto px-8 py-4 sm:p-8 flex flex-col sm:flex-row justify-center items-center">
+            <div className="w-full sm:w-[45%] h-auto text-base md:text-lg text-left text-white my-6 mx-6">
+              <p>
+                The KGPian Game Theory Society, abbreviated as KGTS, is IIT Kharagpur’s game theory organisation. It is a dynamic and intellectually stimulating community for students passionate about the study and application of game theory. It organises various game theory-related events like Nashify and War of Wits, designed to promote a culture of game theory on the campus. The Society’s flagship event is Stratathon, a mind-intriguing strategy case competition featured in Kshitij, the Techno-Management fest of IIT Kharagpur, every year.
+              </p>
+            </div>
+          </div>
+          <div className="text-center mt-20">
+            <h1 className="text-3xl sm:text-5xl mt-5 text-center font-bold text-primary">
+              About IGTS
+            </h1>
+          </div>
+          <div className="w-full md:w-4/5 h-auto px-8 py-4 sm:p-8 flex flex-col sm:flex-row justify-center items-center">
+            <div className="w-full sm:w-[45%] h-auto text-base md:text-lg text-left text-white my-6 mx-6">
+              <p>
+                The Indian Game Theory Society was founded with the motive of promoting the understanding of Game Theory and Strategic Thinking. It aims to start our chapters in all the universities and colleges all over India, helping students to learn the very concept of Game Theory and its application. It also aims to expand our knowledge by applying it in real life scenarios and business decisions.
+              </p>
+            </div>
+          </div>
+          <div className="text-center mt-20">
+            <h1 className="text-3xl sm:text-5xl mt-5 text-center font-bold text-primary">
               Our History
             </h1>
           </div>

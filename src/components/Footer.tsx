@@ -19,11 +19,11 @@ function Footer() {
               className="w-[45px] rounded-full"
             ></Image>
           </div>
-          <div className="flex flex-col items-center justify-start space-y-2">
+          <div className="flex flex-col items-start justify-start space-y-2">
             <div className="font-bold sm:text-xl">
               THE KGPIAN GAME THEORY SOCIETY
             </div>
-            <div className="tracking-wide text-xs sm:text-base -translate-x-7">
+            <div className="tracking-wide text-xs sm:text-base">
               <p>Indian Institute of Technology Kharagpur,</p>
               <p>West Bengal - 721302</p>
             </div>

@@ -6,12 +6,23 @@ import Link from "next/link";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { MdOutlineCancel } from "react-icons/md";
 import Menu from "./Menu";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 function Navbar(){
   const [isMenu, setMenu] = useState(false);
+  useEffect(() => {
+    const closeMenu = () => setMenu(false);
+    document.body.addEventListener("click", closeMenu);
+
+    return () => {
+      document.body.removeEventListener("click", closeMenu);
+    }
+  }, [])
   return (
-    <div className="text-white px-10 py-3 border-b-[1px] border-slate-200 flex justify-between items-center bg-black/80 fixed z-50 top-0 w-full">
+    <div
+      className="text-white px-10 py-3 border-b-[1px] border-slate-200 flex justify-between items-center bg-black/80 fixed z-50 top-0 w-full"
+      onClick={(e) => e.stopPropagation()}
+    >
       <div className="flex items-center gap-x-4">
         <Link href={"/"}>
           <div className="rounded-full">

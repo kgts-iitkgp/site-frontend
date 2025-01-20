@@ -6,7 +6,7 @@ import { PiStrategyBold } from "react-icons/pi";
 import { GoCommentDiscussion } from "react-icons/go";
 import { FaBookOpen } from "react-icons/fa";
 import { FaGamepad } from "react-icons/fa";
-
+import PageTitle from '@/components/PageTitle';
 export default function About() {
   return (
     <div className="min-h-screen">
@@ -34,40 +34,53 @@ export default function About() {
       </div> */}
       <div className="w-full flex flex-col items-center">
         <div className="flex flex-col justify-center items-center lg:w-4/5">
-          <div className="text-center mt-20">
-            <h1 className="text-3xl sm:text-5xl mt-5 text-center font-bold text-primary">
-              About KGTS
-            </h1>
-          </div>
+          <PageTitle title="About Us" />
           <div className="w-full md:w-4/5 h-auto px-8 py-4 sm:p-8 flex flex-col sm:flex-row justify-center items-center">
+            <div className="w-full sm:w-[50%] h-auto flex justify-center object-cover overflow-hidden">
+              <img
+                src="/images/KGTSlogo.png"
+                alt="KGTS Logo"
+                className="transition-transform duration-500 ease-in-out transform hover:scale-110 hover:filter hover:grayscale hover:contrast-125"
+              />
+            </div>
             <div className="w-full sm:w-[45%] h-auto text-base md:text-lg text-left text-white my-6 mx-6">
+              <p className="text-tertiary text-2xl md:text-3xl lg:text-4xl font-bold my-2">
+                KGTS
+              </p>
               <p>
-                The KGPian Game Theory Society, abbreviated as KGTS, is IIT Kharagpur’s game theory organisation. It is a dynamic and intellectually stimulating community for students passionate about the study and application of game theory. It organises various game theory-related events like Nashify and War of Wits, designed to promote a culture of game theory on the campus. The Society’s flagship event is Stratathon, a mind-intriguing strategy case competition featured in Kshitij, the Techno-Management fest of IIT Kharagpur, every year.
+              The KGPian Game Theory Society, abbreviated as KGTS, is IIT Kharagpur’s game theory organisation. It is a dynamic and intellectually stimulating community for students passionate about the study and application of game theory. It organises various game theory-related events like Nashify and War of Wits, designed to promote a culture of game theory on the campus. The Society’s flagship event is Stratathon, a mind-intriguing strategy case competition featured in Kshitij, the Techno-Management fest of IIT Kharagpur, every year.
               </p>
             </div>
           </div>
-          <div className="text-center mt-20">
-            <h1 className="text-3xl sm:text-5xl mt-5 text-center font-bold text-primary">
-              About IGTS
-            </h1>
-          </div>
-          <div className="w-full md:w-4/5 h-auto px-8 py-4 sm:p-8 flex flex-col sm:flex-row justify-center items-center">
+
+          <div className="w-full md:w-4/5 h-auto px-8 py-4 sm:p-8 flex flex-col-reverse sm:flex-row justify-center items-center">
             <div className="w-full sm:w-[45%] h-auto text-base md:text-lg text-left text-white my-6 mx-6">
+              <p className="text-tertiary text-2xl md:text-3xl lg:text-4xl font-bold my-2">
+                IGTS: A bigger picture
+              </p>
               <p>
-                The Indian Game Theory Society was founded with the motive of promoting the understanding of Game Theory and Strategic Thinking. It aims to start our chapters in all the universities and colleges all over India, helping students to learn the very concept of Game Theory and its application. It also aims to expand our knowledge by applying it in real life scenarios and business decisions.
+              The Indian Game Theory Society was founded with the motive of promoting the understanding of Game Theory and Strategic Thinking. It aims to start our chapters in all the universities and colleges all over India, helping students to learn the very concept of Game Theory and its application. It also aims to expand our knowledge by applying it in real life scenarios and business decisions. The society has chapters in IIT Kharagpur, NSUT, and DTU.
               </p>
             </div>
+            <div className="w-full sm:w-[55%] h-auto object-cover overflow-hidden">
+              <img
+                src="/images/IGTS_DTU.jpeg"
+                alt="Chapters of IGTS Image"
+                className="transition-transform duration-500 ease-in-out transform hover:scale-110 hover:filter hover:grayscale hover:contrast-125"
+              />
+              {/* <img
+                src="/images/IGTS_NSUT.jpg"
+                alt="Chapters of IGTS Image"
+                className="transition-transform duration-500 ease-in-out transform hover:scale-110 hover:filter hover:grayscale hover:contrast-125"
+              /> */}
+            </div>
           </div>
-          <div className="text-center mt-20">
-            <h1 className="text-3xl sm:text-5xl mt-5 text-center font-bold text-primary">
-              Our History
-            </h1>
-          </div>
+          <PageTitle title="Our History" />
           <div className="w-full md:w-4/5 h-auto px-8 py-4 sm:p-8 flex flex-col sm:flex-row justify-center items-center">
             <div className="w-full sm:w-[50%] h-auto flex justify-center object-cover overflow-hidden">
               <img
                 src="/images/manojgadia.jpeg"
-                alt="Image 2"
+                alt="Image of Manoj Gadia"
                 className="transition-transform duration-500 ease-in-out transform hover:scale-110 hover:filter hover:grayscale hover:contrast-125"
               />
             </div>
@@ -111,18 +124,14 @@ export default function About() {
             <div className="w-full sm:w-[55%] h-auto object-cover overflow-hidden">
               <img
                 src="/images/fullteam.jpg"
-                alt="Image 1"
+                alt="KGTS Team Image"
                 className="transition-transform duration-500 ease-in-out transform hover:scale-110 hover:filter hover:grayscale hover:contrast-125"
               />
             </div>
           </div>
         </div>
         <div className="flex flex-col justify-center">
-          <div className="text-center mt-20">
-            <h1 className="text-3xl sm:text-5xl mt-5 text-center font-bold text-primary">
-              Our Activities
-            </h1>
-          </div>
+          <PageTitle title="Our Activities" />
           <div className="mx-6 flex flex-col justify-start items-center">
             <div className="flex w-full flex-col sm:flex-row sm:justify-between justify-center items-center sm:items-start">
               <div className="w-4/5 mt-4 sm:w-[40%] h-auto flex flex-col items-center">

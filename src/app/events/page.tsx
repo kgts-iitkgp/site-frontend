@@ -10,6 +10,7 @@ import DotBackground from "../../components/DotBackground";
 import "../globals.css";
 import React from "react";
 import { useEffect } from "react";
+import PageTitle from '@/components/PageTitle';
 const Events = () => {
   const [popupEvent, setPopupEvent] = useState<Event | null>(null);
   const[ongoing, setOngoing]=useState(true);
@@ -37,14 +38,10 @@ const Events = () => {
   return (
     <div className="w-full min-h-screen">
       <DotBackground />
+      <PageTitle title="Events" />
       <div className="flex justify-center">
         <div className=" md:w-[700px] lg:w-[900px] ">
           <div className=" py-8 px-4">
-            <div>
-              <p className="text-3xl sm:text-5xl mb-5 mt-12 font-bold text-primary text-center">
-                Events
-              </p>
-            </div>
             <div className="flex space-x-2 text-xl">
               <p
                 className={`bg-black px-4 py-1 rounded-full border border-primary cursor-pointer transition-all duration-200 ${

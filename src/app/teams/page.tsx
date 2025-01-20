@@ -6,6 +6,7 @@ import { VicePresident } from "@/data/TeamsData";
 import { Advisors } from "@/data/TeamsData";
 import { AcademicHeads, EventsHeads, GeneralSecretaries, TechHeads, DesignHeads, PublicityHeads } from "@/data/TeamsData";
 import { useState, useEffect } from "react";
+import PageTitle from '@/components/PageTitle';
 //import { Strategists } from "@/data/TeamsData";
 function Teams() {
   const [isLgScreen, setIsLgScreen] = useState(false);
@@ -26,11 +27,7 @@ function Teams() {
     <div className="min-h-screen">
       <DotBackground />
       <div>
-        <div>
-          <p className="text-3xl sm:text-5xl mb-3 mt-20 font-bold text-primary text-center">
-            Our Team
-          </p>
-        </div>
+        <PageTitle title="Our Team" />
         <div className="mx-4 flex flex-col items-center">
           <p className="text-3xl mb-4 mt-6 font-bold text-primary text-center">
             Advisors

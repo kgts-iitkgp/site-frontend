@@ -2,7 +2,7 @@
 import React from "react";
 import { BlogCard } from "../../components/BlogCard";
 import DotBackground from "@/components/DotBackground";
-
+import PageTitle from '@/components/PageTitle';
 const BlogPage = () => {
   const blogs = [
     {
@@ -91,10 +91,8 @@ const BlogPage = () => {
   return (
     <div className="min-h-screen">
       <DotBackground />
-      <div className="py-10 px-20 my-4 flex flex-col items-center">
-        <p className="text-3xl sm:text-5xl mb-5 mt-12 font-bold text-primary text-center">
-          Blog
-        </p>
+      <PageTitle title="Blog" />
+      <div className="px-20 flex flex-col items-center">
         <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-stretch gap-6 lg:gap-6 my-8">
           {blogs.map((blog, index) => (
             <BlogCard key={index} {...blog} />

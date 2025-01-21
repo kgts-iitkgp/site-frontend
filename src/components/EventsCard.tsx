@@ -8,9 +8,10 @@ interface EventCardProps {
   event: Event;
   type: "ongoing" | "upcoming" | "past";
   openPopup: (event: Event) => void;
+  RegisterForEventPopup:(event: Event,popupshow:boolean) => void;
 }
 
-const EventCard: React.FC<EventCardProps> = ({ event, type, openPopup }) => {
+const EventCard: React.FC<EventCardProps> = ({ event, type, openPopup, RegisterForEventPopup }) => {
   const cardRef = useRef<HTMLDivElement>(null);
   const isVisible = useOnScreen(cardRef);
 
@@ -78,10 +79,10 @@ const EventCard: React.FC<EventCardProps> = ({ event, type, openPopup }) => {
                 borderRadius="1.75rem"
                 containerClassName="w-[100px] h-[35px] mx-4 my-2"
                 className="bg-black"
+                onClick={() => RegisterForEventPopup(event,true)}
               >
-                <a href="https://udyamregistration.gov.in/Government-India/Ministry-MSME-registration.htm">
                   Register
-                </a>
+
               </Button>
             </div>
           )}

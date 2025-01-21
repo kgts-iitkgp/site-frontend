@@ -9,6 +9,7 @@ export interface Event {
     month?: string;
     venue?: string;
     images? : StaticImageData[];
+    maxParticipantsTeamSize: number;
   }
 
 export interface Profile {
@@ -22,5 +23,6 @@ export interface Profile {
   MailLink: string;
 }
 
-
-  
+export interface EventRegistrationFormData {
+  invitation?: string[];
+}

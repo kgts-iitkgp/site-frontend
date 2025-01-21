@@ -1,8 +1,8 @@
 "use client";
 import { useState } from "react";
-import { Event } from "../../data/types";
+import { Event, EventRegistrationFormData } from "../../data/types";
 import EventCard from "../../components/EventsCard";
-import Popup from "../../components/Popup";
+import Popup from "../../components/PastEventPopup";
 import { Past } from "../../data/PastEvents";
 import { Upcoming } from "../../data/UpcomingEvents";
 import { Ongoing } from "../../data/OngoingEvents";
@@ -10,11 +10,14 @@ import DotBackground from "../../components/DotBackground";
 import "../globals.css";
 import React from "react";
 import { useEffect } from "react";
+import RegistrationForm from "@/components/RegisterPopup";
+
 const Events = () => {
   const [popupEvent, setPopupEvent] = useState<Event | null>(null);
   const[ongoing, setOngoing]=useState(true);
   const[upcoming, setUpcoming]=useState(false);
   const[past, setPast]=useState(false);
+  const [RegistrationForUpcomimgEventPopUp, setRegistrationForUpcomimgEventPopUp] = useState<Event | null>(null);
   
   useEffect(() => {
     if (Ongoing.length === 0 && Upcoming.length === 0) {
@@ -33,6 +36,18 @@ const Events = () => {
   const closePopup = () => {
     setPopupEvent(null);
   };
+
+  const RegisterForEventPopup = (event: Event,popupshow:boolean) => {
+    console.log("Registered for event", event.title);
+    if(popupshow){
+      setRegistrationForUpcomimgEventPopUp(event);
+    }else{
+      setRegistrationForUpcomimgEventPopUp(null);
+    }
+  }
+  const SubmitEventRegistrationForm = (formData: EventRegistrationFormData) => {
+    console.log("Form Submitted", formData);
+  }
 
   return (
     <div className="w-full min-h-screen">
@@ -92,6 +107,7 @@ const Events = () => {
                       event={event}
                       type="ongoing"
                       openPopup={openPopup}
+                      RegisterForEventPopup={RegisterForEventPopup}
                     />
                   ))}
                 </div>
@@ -112,6 +128,7 @@ const Events = () => {
                       event={event}
                       type="upcoming"
                       openPopup={openPopup}
+                      RegisterForEventPopup={RegisterForEventPopup}
                     />
                   ))}
                 </div>
@@ -131,6 +148,7 @@ const Events = () => {
                       event={event}
                       type="past"
                       openPopup={openPopup}
+                      RegisterForEventPopup={RegisterForEventPopup}
                     />
                   ))}
                 </div>
@@ -142,6 +160,11 @@ const Events = () => {
             </section>):null)}
 
             {popupEvent && <Popup event={popupEvent} closePopup={closePopup} />}
+
+            {RegistrationForUpcomimgEventPopUp && <RegistrationForm event={RegistrationForUpcomimgEventPopUp} 
+                  SubmitEventRegistrationForm={SubmitEventRegistrationForm} 
+                  RegisterForEventPopup={RegisterForEventPopup} />}
+
           </div>
         </div>
       </div>

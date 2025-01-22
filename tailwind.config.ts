@@ -12,7 +12,7 @@ const config: Config = {
     "./node_modules/@shadcn/ui/dist/**/*.{js,jsx,ts,tsx}",
     "./src/**/*.{ts,tsx}",
   ],
-  darkMode: 'class',
+  //darkMode: 'class',
 
   theme: {
     extend: {

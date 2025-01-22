@@ -39,7 +39,7 @@ const EventCard: React.FC<EventCardProps> = ({ event, type, openPopup }) => {
             <h3 className="text-xl lg:text-2xl font-bold text-primary uppercase">
               {event.title}
             </h3>
-            <p className="text-sm lg:text-base text-textColor   ">
+            <p className="text-sm lg:text-base text-tertiary">
               {event.description}
             </p>
           </div>

@@ -18,6 +18,9 @@ const DotBackground: React.FC = () => {
 
     const drawDots = (x: number, y: number) => {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
+      ctx.fillStyle = 'black'; // Set background to black
+      ctx.fillRect(0, 0, canvas.width, canvas.height); // Fill the entire canvas with black
+      
       const isMobile = window.innerWidth <= 768;
       const spacing = isMobile ? 25 : 35;
       const dotRadius = isMobile ? 1 : 1.5;

@@ -45,7 +45,7 @@ const Events = () => {
                 Events
               </p>
             </div>
-            <div className="flex space-x-2 text-xl">
+            <div className="flex space-x-2 text-xl text-white">
               <p
                 className={`bg-black px-4 py-1 rounded-full border border-primary cursor-pointer transition-all duration-200 ${
                   ongoing ? "bg-primary/50" : ""

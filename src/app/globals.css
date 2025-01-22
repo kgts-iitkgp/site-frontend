@@ -49,3 +49,11 @@ body {
 .scrollbar-hide::-webkit-scrollbar {
   display: none; /* WebKit */
 }
+
+.dark {
+  background-color: var(--background-dark);
+}
+
+canvas {
+  background-color: black !important;
+}

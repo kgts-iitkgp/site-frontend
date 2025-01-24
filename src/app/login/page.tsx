@@ -1,13 +1,13 @@
-'use client';
-import React, { useState } from 'react';
-import DotBackground from '@/components/DotBackground';
-import Image from 'next/image';
+"use client";
+import React, { useState } from "react";
+import DotBackground from "@/components/DotBackground";
+import Image from "next/image";
 import placeholderImage from "../../../public/light kgts icons/android-chrome-512x512.png";
 
 const LoginPage: React.FC = () => {
-  const [formData, setFormData] = useState({ email: '', password: '' });
+  const [formData, setFormData] = useState({ email: "", password: "" });
   const [errors, setErrors] = useState<{ [key: string]: string }>({});
-  const [success, setSuccess] = useState('');
+  const [success, setSuccess] = useState("");
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
@@ -20,12 +20,12 @@ const LoginPage: React.FC = () => {
     // Email validation
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(formData.email)) {
-      newErrors.email = 'Invalid email address';
+      newErrors.email = "Invalid email address";
     }
 
     // Password validation
     if (formData.password.length < 6) {
-      newErrors.password = 'Password must be at least 6 characters long';
+      newErrors.password = "Password must be at least 6 characters long";
     }
 
     setErrors(newErrors);
@@ -35,27 +35,25 @@ const LoginPage: React.FC = () => {
   const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
 
-    const delay = (ms:number) => new Promise((resolve) => setTimeout(resolve, ms));
+    const delay = (ms: number) =>
+      new Promise((resolve) => setTimeout(resolve, ms));
 
     if (!validateForm()) {
-      console.log("intiating delay")
       await delay(5000);
-      console.log("delay over")
       setErrors({});
-      return;
     }
 
     try {
-      const response = await fetch('http://localhost:5000/api/login', {
-        method: 'POST',
+      const response = await fetch("http://localhost:5000/api/login", {
+        method: "POST",
         headers: {
-          'Content-Type': 'application/json',
+          "Content-Type": "application/json",
         },
         body: JSON.stringify(formData),
       });
 
       const data = await response.json();
-      console.log(data)
+      console.log(data);
       if (!response.ok) {
         if (data.errors) {
           const apiErrors: { [key: string]: string } = {};
@@ -65,31 +63,35 @@ const LoginPage: React.FC = () => {
           setErrors(apiErrors);
         } else if (data.error) {
           setErrors({ apiError: data.error });
+        } else if (data.message) {
+          setErrors({ apiError: data.message });
         } else {
-          setErrors({ apiError: 'Login failed' });
+          setErrors({ apiError: "Login failed" });
         }
-        setSuccess('');
+        setSuccess("");
       } else {
-        localStorage.setItem('authToken', data.token);
-        localStorage.setItem('userName', data.userName);
-        setSuccess('Logged in successfully! Redirecting...');
+        localStorage.setItem("authToken", data.token);
+        localStorage.setItem("userName", data.userName);
+        setSuccess("Logged in successfully! Redirecting to home...");
         setErrors({});
 
         // Redirect to home after a delay
         setTimeout(() => {
-          window.location.href = '/';
+          window.location.href = "/";
         }, 2000);
       }
     } catch (err) {
-      setErrors({ apiError: 'An unexpected error occurred. Please try again.' });
-      setSuccess('');
+      setErrors({
+        apiError: "An unexpected error occurred. Please try again.",
+      });
+      setSuccess("");
     }
   };
 
   return (
     <div className="flex min-h-screen relative bg-gray-900">
       <DotBackground />
-  
+
       {/* Form Section */}
       <div className="flex flex-col justify-center items-center w-full md:w-2/3 text-background p-8 relative z-10">
         <form
@@ -99,7 +101,7 @@ const LoginPage: React.FC = () => {
           <h2 className="text-4xl font-bold text-primary mb-6 text-center">
             Log In
           </h2>
-  
+
           {Object.values(errors).map((error, index) => (
             <div
               key={index}
@@ -108,13 +110,13 @@ const LoginPage: React.FC = () => {
               {error}
             </div>
           ))}
-  
+
           {success && (
             <div className="bg-green-100 text-green-700 p-4 rounded mb-4 text-sm">
               {success}
             </div>
           )}
-  
+
           <div className="mb-6">
             <label
               htmlFor="email"
@@ -132,7 +134,7 @@ const LoginPage: React.FC = () => {
               required
             />
           </div>
-  
+
           <div className="mb-6">
             <label
               htmlFor="password"
@@ -150,14 +152,14 @@ const LoginPage: React.FC = () => {
               required
             />
           </div>
-  
+
           <button
             type="submit"
             className="w-full py-3 bg-primary text-white font-bold rounded-lg shadow-md hover:bg-secondary transition"
           >
             Log In
           </button>
-  
+
           <div className="mt-6 text-center text-sm">
             <p>
               Don’t have an account?{" "}
@@ -168,7 +170,7 @@ const LoginPage: React.FC = () => {
           </div>
         </form>
       </div>
-  
+
       {/* Society Image */}
       <div className="hidden md:flex w-1/3 justify-center items-center">
         <div className="rounded-full overflow-hidden w-[300px] h-[300px] lg:w-[400px] lg:h-[400px] flex items-center justify-center bg-gray-700">
@@ -184,7 +186,6 @@ const LoginPage: React.FC = () => {
       </div>
     </div>
   );
-  
 };
 
 export default LoginPage;

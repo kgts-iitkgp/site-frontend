@@ -10,7 +10,7 @@ import DotBackground from "../../components/DotBackground";
 import "../globals.css";
 import React from "react";
 import { useEffect } from "react";
-import RegistrationForm from "@/components/RegisterPopup";
+import RegistrationForm from "@/components/EventRegisterPopup";
 
 const Events = () => {
   const [popupEvent, setPopupEvent] = useState<Event | null>(null);

@@ -12,9 +12,10 @@ const RegistrationForm: React.FC<RegistrationFormProps> = ({
 }) => {
   const [teamName, setTeamName] = useState("");
   const [participants, setParticipants] = useState([""]);
-  const maxParticipants = event.max_participants || 5;//max participents allowed
+  const maxParticipants = event.max_participants || 5; //max participents allowed
   const [jwtAuthToken, setJwtAuthToken] = useState<string | null>(null);
   const [errors, setErrors] = useState<string[]>([]);
+  const [success, setSuccess] = useState<string | null>(null);
 
   const addParticipantField = () => {
     if (participants.length < maxParticipants) {
@@ -66,13 +67,22 @@ const RegistrationForm: React.FC<RegistrationFormProps> = ({
 
   useEffect(() => {
     if (errors.length > 0) {
-        const timer = setTimeout(() => {
-            setErrors([]);
-        }, 3000); // Errors will disappear after 3 seconds
+      const timer = setTimeout(() => {
+        setErrors([]);
+      }, 3000); // Errors will disappear after 3 seconds
 
-        return () => clearTimeout(timer);
+      return () => clearTimeout(timer);
     }
-}, [errors]);
+  }, [errors]);
+  useEffect(() => {
+    if (success !== null) {
+      const timer = setTimeout(() => {
+        setSuccess(null);
+      }, 3000); // Errors will disappear after 3 seconds
+
+      return () => clearTimeout(timer);
+    }
+  }, [success]);
 
   async function registerTeam(
     data: EventRegistrationFormData,
@@ -95,58 +105,25 @@ const RegistrationForm: React.FC<RegistrationFormProps> = ({
       if (response.status === 201) {
         const result = await response.json();
         console.log(result.message); // Registration successful
+        setSuccess(result.message);
       } else {
         const errorData = await response.json();
-        switch (response.status) {
-          case 403:
-            setErrors((prevErrors) => [
-              ...prevErrors,
-              "Unauthorized: Team leader ID does not match the authenticated user.",
-            ]);
-            break;
-          case 404:
-            if (errorData.message.includes("Event")) {
-              setErrors((prevErrors) => [...prevErrors, "Event not found."]);
-            } else if (errorData.message.includes("Team leader")) {
-              setErrors((prevErrors) => [
-                ...prevErrors,
-                "Team leader not found.",
-              ]);
-            }
-            break;
-          case 400:
-            if (errorData.message.includes("team members not found")) {
-              setErrors((prevErrors) => [
-                ...prevErrors,
-                "One or more team members not found.",
-              ]);
-            } else if (
-              errorData.message.includes("Participant limit exceeded")
-            ) {
-              setErrors((prevErrors) => [
-                ...prevErrors,
-                "Participant limit exceeded.",
-              ]);
-            } else if (
-              errorData.message.includes("team members are already registered")
-            ) {
-              setErrors((prevErrors) => [
-                ...prevErrors,
-                "One or more team members are already registered for this event.",
-              ]);
-            }
-            break;
-          case 500:
-            setErrors((prevErrors) => [
-              ...prevErrors,
-              "Server Error: Error processing registration.",
-            ]);
-            break;
-          default:
-            setErrors((prevErrors) => [
-              ...prevErrors,
-              `Unexpected error: ${errorData.message}`,
-            ]);
+        if(response.status>=400 && response.status<500){
+          setErrors((prevErrors) => [
+            ...prevErrors,
+            `Error: ${errorData.message}`,
+          ]);
+        }
+        else if(response.status==500){
+          setErrors((prevErrors) => [
+            ...prevErrors,
+            "Server Error: Error processing registration.",
+          ]);
+        }else {
+          setErrors((prevErrors) => [
+            ...prevErrors,
+            `Unexpected error: ${errorData.message}`,
+          ]);
         }
       }
     } catch (error) {
@@ -156,7 +133,7 @@ const RegistrationForm: React.FC<RegistrationFormProps> = ({
 
   const handleSubmit = (e: any) => {
     e.preventDefault();
-    if(teamName.trim() === ""){
+    if (teamName.trim() === "") {
       setErrors((prevErrors) => [...prevErrors, "Team name cannot be empty."]);
       return;
     }
@@ -182,6 +159,14 @@ const RegistrationForm: React.FC<RegistrationFormProps> = ({
         <h1 className="text-2xl font-bold text-center mb-6 text-white">
           Event Registration
         </h1>
+        {success != null && (
+          <ul
+            className="bg-green-600 border border-green-700 text-red-100 px-4 py-3 rounded relative mb-4"
+            role="success"
+          >
+            <li className="flex items-center py-1">{success}</li>
+          </ul>
+        )}
         {errors.length > 0 && (
           <ul
             className="bg-red-600 border border-red-700 text-red-100 px-4 py-3 rounded relative mb-4"

@@ -1,20 +1,20 @@
-'use client';
+"use client";
 
-import React, { useState } from 'react';
-import DotBackground from '@/components/DotBackground';
-import Image from 'next/image';
+import React, { useState } from "react";
+import DotBackground from "@/components/DotBackground";
+import Image from "next/image";
 import placeholderImage from "../../../public/light kgts icons/android-chrome-512x512.png";
 
 const SignupPage: React.FC = () => {
   const [formData, setFormData] = useState({
-    fullName: '',
-    email: '',
-    rollNo: '',
-    phone: '',
-    password: '',
+    fullName: "",
+    email: "",
+    rollNo: "",
+    phone: "",
+    password: "",
   });
   const [errors, setErrors] = useState<{ [key: string]: string }>({});
-  const [success, setSuccess] = useState('');
+  const [success, setSuccess] = useState("");
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -24,25 +24,25 @@ const SignupPage: React.FC = () => {
     const newErrors: { [key: string]: string } = {};
 
     if (!formData.fullName.trim()) {
-      newErrors.fullName = 'Full name is required';
+      newErrors.fullName = "Full name is required";
     }
 
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(formData.email)) {
-      newErrors.email = 'Invalid email address';
+      newErrors.email = "Invalid email address";
     }
 
     const phoneRegex = /^\d{10}$/;
     if (!phoneRegex.test(formData.phone)) {
-      newErrors.phone = 'Phone number must be 10 digits';
+      newErrors.phone = "Phone number must be 10 digits";
     }
 
     if (formData.rollNo.length !== 10) {
-      newErrors.rollNo = 'Roll number must be exactly 10 characters';
+      newErrors.rollNo = "Roll number must be exactly 10 characters";
     }
 
     if (formData.password.length < 6) {
-      newErrors.password = 'Password must be at least 6 characters long';
+      newErrors.password = "Password must be at least 6 characters long";
     }
 
     setErrors(newErrors);
@@ -52,7 +52,8 @@ const SignupPage: React.FC = () => {
   const handleSignup = async (e: React.FormEvent) => {
     e.preventDefault();
 
-    const delay = (ms:number) => new Promise((resolve) => setTimeout(resolve, ms));
+    const delay = (ms: number) =>
+      new Promise((resolve) => setTimeout(resolve, ms));
 
     if (!validateForm()) {
       await delay(5000);
@@ -60,10 +61,10 @@ const SignupPage: React.FC = () => {
     }
 
     try {
-      const response = await fetch('http://localhost:5000/api/signup', {
-        method: 'POST',
+      const response = await fetch("http://localhost:5000/api/signup", {
+        method: "POST",
         headers: {
-          'Content-Type': 'application/json',
+          "Content-Type": "application/json",
         },
         body: JSON.stringify(formData),
       });
@@ -79,31 +80,35 @@ const SignupPage: React.FC = () => {
           setErrors(apiErrors);
         } else if (data.error) {
           setErrors({ apiError: data.error });
+        } else if (data.message) {
+          setErrors({ apiError: data.message });
         } else {
-          setErrors({ apiError: 'Signup failed' });
+          setErrors({ apiError: "Signup failed" });
         }
-        setSuccess('');
+        setSuccess("");
       } else {
-        localStorage.setItem('authToken', data.token);
-        localStorage.setItem('userName', formData.fullName);
-        setSuccess('Account created! Redirecting to home...');
+        localStorage.setItem("authToken", data.token);
+        localStorage.setItem("userName", formData.fullName);
+        setSuccess("Account created! Redirecting to home...");
         setErrors({});
 
         // Redirect to home after a delay
         setTimeout(() => {
-          window.location.href = '/';
+          window.location.href = "/";
         }, 2000);
       }
     } catch (err) {
-      setErrors({ apiError: 'An unexpected error occurred. Please try again.' });
-      setSuccess('');
+      setErrors({
+        apiError: "An unexpected error occurred. Please try again.",
+      });
+      setSuccess("");
     }
   };
 
   return (
     <div className="flex min-h-screen relative bg-gray-900">
       <DotBackground />
-  
+
       {/* Form Section */}
       <div className="flex flex-col justify-center items-center w-full md:w-2/3 text-background p-8 relative z-10">
         <form
@@ -113,7 +118,7 @@ const SignupPage: React.FC = () => {
           <h2 className="text-4xl font-bold text-primary mb-6 text-center">
             Sign Up
           </h2>
-  
+
           {Object.values(errors).map((error, index) => (
             <div
               key={index}
@@ -122,13 +127,13 @@ const SignupPage: React.FC = () => {
               {error}
             </div>
           ))}
-  
+
           {success && (
             <div className="bg-green-100 text-green-700 p-4 rounded mb-4 text-sm">
               {success}
             </div>
           )}
-  
+
           <div className="mb-6">
             <label
               htmlFor="fullName"
@@ -146,7 +151,7 @@ const SignupPage: React.FC = () => {
               required
             />
           </div>
-  
+
           <div className="mb-6">
             <label
               htmlFor="email"
@@ -164,7 +169,7 @@ const SignupPage: React.FC = () => {
               required
             />
           </div>
-  
+
           <div className="mb-6">
             <label
               htmlFor="rollNo"
@@ -182,7 +187,7 @@ const SignupPage: React.FC = () => {
               required
             />
           </div>
-  
+
           <div className="mb-6">
             <label
               htmlFor="phone"
@@ -200,7 +205,7 @@ const SignupPage: React.FC = () => {
               required
             />
           </div>
-  
+
           <div className="mb-6">
             <label
               htmlFor="password"
@@ -218,14 +223,14 @@ const SignupPage: React.FC = () => {
               required
             />
           </div>
-  
+
           <button
             type="submit"
             className="w-full py-3 bg-primary text-white font-bold rounded-lg shadow-md hover:bg-secondary transition"
           >
             Sign Up
           </button>
-  
+
           <div className="mt-6 text-center text-sm">
             <p>
               Already have an account?{" "}
@@ -236,7 +241,7 @@ const SignupPage: React.FC = () => {
           </div>
         </form>
       </div>
-  
+
       {/* Society Image */}
       <div className="hidden md:flex w-1/3 justify-center items-center">
         <div className="rounded-full overflow-hidden w-[300px] h-[300px] lg:w-[400px] lg:h-[400px] flex items-center justify-center bg-gray-700">
@@ -252,7 +257,6 @@ const SignupPage: React.FC = () => {
       </div>
     </div>
   );
-  
 };
 
 export default SignupPage;

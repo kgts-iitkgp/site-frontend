@@ -1,6 +1,7 @@
 import { StaticImageData } from "next/image";
 export interface Event {
     id: string;
+    max_participants?: number;
     title: string;
     description: string;
     image?: StaticImageData;
@@ -9,7 +10,6 @@ export interface Event {
     month?: string;
     venue?: string;
     images? : StaticImageData[];
-    maxParticipantsTeamSize: number;
   }
 
 export interface Profile {
@@ -24,5 +24,8 @@ export interface Profile {
 }
 
 export interface EventRegistrationFormData {
-  invitation?: string[];
+  eventId: string,
+  teamLeaderId: string;
+  teamMemberIds: string[];
+  teamName: string;
 }

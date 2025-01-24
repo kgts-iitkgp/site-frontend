@@ -45,9 +45,6 @@ const Events = () => {
       setRegistrationForUpcomimgEventPopUp(null);
     }
   }
-  const SubmitEventRegistrationForm = (formData: EventRegistrationFormData) => {
-    console.log("Form Submitted", formData);
-  }
 
   return (
     <div className="w-full min-h-screen">
@@ -162,7 +159,6 @@ const Events = () => {
             {popupEvent && <Popup event={popupEvent} closePopup={closePopup} />}
 
             {RegistrationForUpcomimgEventPopUp && <RegistrationForm event={RegistrationForUpcomimgEventPopUp} 
-                  SubmitEventRegistrationForm={SubmitEventRegistrationForm} 
                   RegisterForEventPopup={RegisterForEventPopup} />}
 
           </div>

@@ -9,14 +9,14 @@ import Treasure_hunt_7 from '/public/images/Treasure_hunt_7.jpg'
 import Treasure_hunt_8 from '/public/images/Treasure_hunt_8.jpg'
 
 export const Ongoing : Event[]=[
-    // {
-    //     id : "1",
-    //     maxParticipantsTeamSize: 10,
-    //     title : "Treasure Hunt",
-    //     description: "Assemble your crew and prepare to embark on a quest across the IIT Kharagpur campus.  ",
-    //     startDate: "2024-08-25",
-    //     endDate: "2024-08-25",
-    //     venue : "Nalanda",
-    //     image: Treasure_hunt_5,
-    // },
+    {
+        id : "EVT062",
+        max_participants: 4,
+        title : "Treasure Hunt",
+        description: "Assemble your crew and prepare to embark on a quest across the IIT Kharagpur campus.  ",
+        startDate: "2024-08-25",
+        endDate: "2024-08-25",
+        venue : "Nalanda",
+        image: Treasure_hunt_5,
+    },
 ]
